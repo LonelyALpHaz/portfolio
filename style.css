@@ -17,6 +17,29 @@ footer {
     padding-left: 20px;
     background-color: #1d1f25;
 }
+
+button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 15px;
+    background-color: #20232c;
+    color: #51ae9e;
+    border: solid #1d1f25;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px 5px 5px #1d1f25;
+}
+
+button:hover {
+    background-color: #51ae9e;
+    color: #1d1f25;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -72,11 +95,17 @@ hr {
     margin: 40px 0px 0px 100px;
 }
 
+#buttons {
+    padding-top: 10px;
+    margin-left: 150px;
+    word-spacing: 20px;
+}
+
 #img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 2px solid #20232c;
+    border: 10px solid #1d1f25;
 }
 
 mark.cyan {
