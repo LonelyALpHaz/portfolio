@@ -1,12 +1,36 @@
 /* style.css */
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p, li {
+        font-size: 20px;
+    }
+
+    button {
+        width: 180px;
+    }
+
+    #buttons {
+        margin-left: 150px;
+    }
+
     .container {
-        padding: 0 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 40px 0 0 100px;
     }
 
     .div-bordered {
-        width: 100%;
+        width: 650px;
     }
 }
 
@@ -20,6 +44,7 @@ body {
 
 main {
     padding: 2em;
+    max-width: 1686;
 }
 
 footer {
