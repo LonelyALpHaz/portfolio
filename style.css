@@ -1,5 +1,15 @@
 /* style.css */
 
+@media (max-width: 600px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .div-bordered {
+        width: 100%;
+    }
+}
+
 body {
     background-color: #20232c;
     font-family: "Roboto Mono", monospace;
@@ -56,6 +66,7 @@ p {
 
 li {
     font-size: 20px;
+    padding-top: 20px;
 }
 
 hr {
