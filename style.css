@@ -14,11 +14,12 @@
     }
 
     button {
-        width: 180px;
+        width: 200px;
+        height: 80px;
     }
 
     #buttons {
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .container {
@@ -106,7 +107,7 @@ hr {
 }
 
 #welcome {
-    padding-top: 50px;
+    padding-top: 2%;
 }
 
 #welcome, #about {
@@ -133,7 +134,7 @@ hr {
 
 #buttons {
     padding-top: 10px;
-    margin-left: 150px;
+    margin-left: 15%;
     word-spacing: 20px;
 }
 
