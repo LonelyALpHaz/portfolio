@@ -1,40 +1,5 @@
 /* style.css */
 
-@media (min-width: 600px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    p, li {
-        font-size: 20px;
-    }
-
-    button {
-        width: 200px;
-        height: 80px;
-    }
-
-    #buttons {
-        margin-left: 100px;
-    }
-
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin: 40px 0 0 100px;
-    }
-
-    .div-bordered {
-        width: 650px;
-    }
-}
-
 body {
     background-color: #20232c;
     font-family: "Roboto Mono", monospace;
@@ -45,7 +10,6 @@ body {
 
 main {
     padding: 2em;
-    max-width: 1686;
 }
 
 footer {
@@ -110,7 +74,9 @@ hr {
     padding-top: 2%;
 }
 
-#welcome, #about {
+
+#welcome, #about, #skills, #projects, #data-container {
+    width: 650px;
     flex: 1;
     margin: 0 1em;
 }
@@ -148,4 +114,68 @@ hr {
 mark.cyan {
     color: #51ae9e;
     background: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 0em;
+    }
+
+    footer {
+        width: 200%;
+        padding-left: 25%;
+    }
+
+    button {
+        display: inline-block;
+        width: 250px;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    .container {
+        display: flex;
+        text-align: center;
+        margin: 0% 0% 0% 0%;
+    }
+
+    #welcome {
+        text-align: center;
+        margin: 0% 0% 0% 35%;
+    }
+
+    #about, #skills, #projects {
+        width: 700px;
+        margin: 20px 20px 40px 10px;
+        text-align: center;
+    }
+
+    #img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #email {
+        font-size: 30px;
+    }
+
+    #buttons {
+        display: inline-block;
+        margin: 0% 0% 5% 0%;
+        word-spacing: 20px;
+    }
 }
