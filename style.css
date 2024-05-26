@@ -140,7 +140,7 @@ mark.cyan {
 
     p {
         font-size: 25px;
-        max-width: 200%;
+        max-width: auto;
     }
 
     li {
