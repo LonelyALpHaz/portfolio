@@ -140,11 +140,11 @@ mark.cyan {
 
     p {
         font-size: 25px;
-        max-width: auto;
+        max-width: 205%;
     }
 
     li {
-        font-size: 25px;
+        font-size: 30px;
         padding-top: 20px;
     }
 
