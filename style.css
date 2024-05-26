@@ -140,7 +140,7 @@ mark.cyan {
 
     p {
         font-size: 25px;
-        max-width: 205%;
+        max-width: 100%;
     }
 
     li {
@@ -172,7 +172,7 @@ mark.cyan {
 
     #welcome {
         text-align: center;
-        margin: 20% 0% 0% 25%;
+        margin: 40% 0% 0% 25%;
     }
 
     #about, #skills, #projects {
