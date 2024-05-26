@@ -1,4 +1,5 @@
-/* Estilos gerais */
+/* style.css */
+
 body {
     background-color: #20232c;
     font-family: "Roboto Mono", monospace;
@@ -66,12 +67,13 @@ hr {
 #social-media {
     word-spacing: 20px;
     text-align: center;
-    margin: 50px 250px 0 0;
+    margin: 50px 250px 0px 0px;
 }
 
 #welcome {
     padding-top: 2%;
 }
+
 
 #welcome, #about, #skills, #projects, #data-container {
     width: 650px;
@@ -93,7 +95,7 @@ hr {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 40px 0 0 100px;
+    margin: 40px 0px 0px 100px;
 }
 
 #buttons {
@@ -114,74 +116,66 @@ mark.cyan {
     background: none;
 }
 
-/* Estilos responsivos */
-@media screen and (max-width: 600px) {
 
-    body {
-        margin: 0;
-        padding: 0;
-    }
+@media screen and (max-width: 600px) {
 
     h1 {
         font-size: 35px;
     }
 
     h2 {
-        font-size: 30px; /* Ajuste no tamanho da fonte */
-        padding-left: 0; /* Remover padding desnecessário */
+        font-size: 40px;
     }
 
     p {
-        font-size: 18px; /* Ajuste no tamanho da fonte */
-        max-width: 100%; /* Garantir que o texto ocupe toda a largura disponível */
+        font-size: 25px;
     }
 
     main {
-        padding: 1em; /* Reduzir padding para telas menores */
+        padding: 0em;
     }
 
     footer {
-        width: 100%; /* Ajustar largura para 100% */
-        padding-left: 10%; /* Ajustar padding para melhor visualização */
+        width: 200%;
+        padding-left: 25%;
     }
 
     button {
-        width: 100%; /* Ocupando toda a largura disponível */
-        height: auto; /* Ajustar altura automaticamente */
-        font-size: 18px; /* Ajuste no tamanho da fonte */
+        display: inline-block;
+        width: 250px;
+        height: 120px;
+        font-size: 30px;
     }
 
     .container {
-        flex-direction: column; /* Empilhar itens verticalmente */
-        align-items: center; /* Centralizar itens */
-        margin: 20px 0; /* Ajustar margens */
+        display: flex;
+        text-align: center;
+        margin: 0% 0% 0% 0%;
     }
 
     #welcome {
         text-align: center;
-        margin: 20px 0; /* Ajustar margens */
+        margin: 0% 0% 0% 35%;
     }
 
-    #about, #skills, #projects, #data-container {
-        width: 100%; /* Ocupando toda a largura disponível */
-        margin: 20px 0; /* Ajustar margens */
-        text-align: center; /* Centralizar texto */
+    #about, #skills, #projects {
+        width: 700px;
+        margin: 20px 20px 40px 10px;
+        text-align: center;
     }
 
     #img {
-        width: 100%; /* Ocupando toda a largura disponível */
-        max-width: 350px; /* Limitar largura máxima */
-        height: auto; /* Ajustar altura automaticamente */
+        width: 350px;
+        height: 350px;
     }
 
     #email {
-        font-size: 20px; /* Ajuste no tamanho da fonte */
+        font-size: 30px;
     }
 
     #buttons {
-        display: flex; /* Flexbox para botões */
-        flex-direction: column; /* Empilhar botões verticalmente */
-        align-items: center; /* Centralizar botões */
-        margin: 20px 0; /* Ajustar margens */
+        display: inline-block;
+        margin: 0% 0% 5% 0%;
+        word-spacing: 20px;
     }
 }
