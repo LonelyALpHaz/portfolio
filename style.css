@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Estilos gerais */
 body {
     background-color: #20232c;
     font-family: "Roboto Mono", monospace;
@@ -67,13 +66,12 @@ hr {
 #social-media {
     word-spacing: 20px;
     text-align: center;
-    margin: 50px 250px 0px 0px;
+    margin: 50px 250px 0 0;
 }
 
 #welcome {
     padding-top: 2%;
 }
-
 
 #welcome, #about, #skills, #projects, #data-container {
     width: 650px;
@@ -95,7 +93,7 @@ hr {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 40px 0px 0px 100px;
+    margin: 40px 0 0 100px;
 }
 
 #buttons {
@@ -116,66 +114,74 @@ mark.cyan {
     background: none;
 }
 
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
 
-@media screen and (max-width: 800px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
     h1 {
         font-size: 35px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 30px; /* Ajuste no tamanho da fonte */
+        padding-left: 0; /* Remover padding desnecessário */
     }
 
     p {
-        font-size: 25px;
+        font-size: 18px; /* Ajuste no tamanho da fonte */
+        max-width: 100%; /* Garantir que o texto ocupe toda a largura disponível */
     }
 
     main {
-        padding: 0em;
+        padding: 1em; /* Reduzir padding para telas menores */
     }
 
     footer {
-        width: 200%;
-        padding-left: 25%;
+        width: 100%; /* Ajustar largura para 100% */
+        padding-left: 10%; /* Ajustar padding para melhor visualização */
     }
 
     button {
-        display: inline-block;
-        width: 250px;
-        height: 120px;
-        font-size: 30px;
+        width: 100%; /* Ocupando toda a largura disponível */
+        height: auto; /* Ajustar altura automaticamente */
+        font-size: 18px; /* Ajuste no tamanho da fonte */
     }
 
     .container {
-        display: flex;
-        text-align: center;
-        margin: 0% 0% 0% 0%;
+        flex-direction: column; /* Empilhar itens verticalmente */
+        align-items: center; /* Centralizar itens */
+        margin: 20px 0; /* Ajustar margens */
     }
 
     #welcome {
         text-align: center;
-        margin: 0% 0% 0% 35%;
+        margin: 20px 0; /* Ajustar margens */
     }
 
-    #about, #skills, #projects {
-        width: 700px;
-        margin: 20px 20px 40px 10px;
-        text-align: center;
+    #about, #skills, #projects, #data-container {
+        width: 100%; /* Ocupando toda a largura disponível */
+        margin: 20px 0; /* Ajustar margens */
+        text-align: center; /* Centralizar texto */
     }
 
     #img {
-        width: 350px;
-        height: 350px;
+        width: 100%; /* Ocupando toda a largura disponível */
+        max-width: 350px; /* Limitar largura máxima */
+        height: auto; /* Ajustar altura automaticamente */
     }
 
     #email {
-        font-size: 30px;
+        font-size: 20px; /* Ajuste no tamanho da fonte */
     }
 
     #buttons {
-        display: inline-block;
-        margin: 0% 0% 5% 0%;
-        word-spacing: 20px;
+        display: flex; /* Flexbox para botões */
+        flex-direction: column; /* Empilhar botões verticalmente */
+        align-items: center; /* Centralizar botões */
+        margin: 20px 0; /* Ajustar margens */
     }
 }
