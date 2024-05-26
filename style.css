@@ -70,6 +70,11 @@ hr {
     margin: 50px 250px 0px 0px;
 }
 
+#email-img {
+    width: 25px;
+    height: 25px;
+}
+
 #welcome {
     padding-top: 2%;
 }
@@ -79,6 +84,19 @@ hr {
     width: 650px;
     flex: 1;
     margin: 0 1em;
+}
+
+#buttons {
+    padding-top: 10px;
+    margin-left: 15%;
+    word-spacing: 20px;
+}
+
+#img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #1d1f25;
 }
 
 .div-bordered {
@@ -98,19 +116,6 @@ hr {
     margin: 40px 0px 0px 100px;
 }
 
-#buttons {
-    padding-top: 10px;
-    margin-left: 15%;
-    word-spacing: 20px;
-}
-
-#img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 10px solid #1d1f25;
-}
-
 mark.cyan {
     color: #51ae9e;
     background: none;
@@ -119,63 +124,82 @@ mark.cyan {
 
 @media screen and (max-width: 600px) {
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
-        font-size: 35px;
+        font-size: 38px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 32px;
+        padding-left: 0;
     }
 
     p {
         font-size: 25px;
+        max-width: 100%;
+    }
+
+    li {
+        font-size: 25px;
+        padding-top: 20px;
     }
 
     main {
-        padding: 0em;
+        padding: 0;
     }
 
     footer {
         width: 200%;
-        padding-left: 25%;
+        padding-left: 10%;
     }
 
     button {
-        display: inline-block;
+        display: block;
         width: 250px;
         height: 120px;
         font-size: 30px;
+        margin: 0% 0% 0% 10%;
     }
 
     .container {
         display: flex;
-        text-align: center;
-        margin: 0% 0% 0% 1%;
+        margin: 0;
     }
 
     #welcome {
         text-align: center;
-        margin: 0% 0% 0% 35%;
+        margin: 20% 0% 0% 25%;
     }
 
     #about, #skills, #projects {
-        width: 700px;
-        margin: 20px 20px 40px 10px;
+        width: 200%;
+        margin: 40px 20px 40px 10px;
         text-align: center;
     }
 
     #img {
-        width: 350px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
+        max-width: 350px;
     }
 
     #email {
         font-size: 30px;
     }
 
+    #email-img {
+        width: 40px;
+        height: 40px;
+    }
+
     #buttons {
-        display: inline-block;
-        margin: 0% 0% 5% 0%;
-        word-spacing: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
     }
 }
