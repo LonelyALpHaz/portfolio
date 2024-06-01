@@ -1,21 +1,21 @@
 /* style.css */
 
 body {
-    background-color: #20232c;
+    background-color: #161925;
     font-family: "Roboto Mono", monospace;
     color: white;
     margin: 0;
     padding: 0;
 }
 
-main {
-    padding: 2em;
-}
-
 footer {
     padding: 1em 0;
     padding-left: 20px;
-    background-color: #1d1f25;
+    background-color: white;
+}
+
+#footer-copy {
+    color: #161925;;
 }
 
 button {
@@ -27,7 +27,7 @@ button {
     text-align: center;
     font-size: 15px;
     background-color: #20232c;
-    color: #51ae9e;
+    color: #06BEE1;
     border: solid #1d1f25;
     border-radius: 10px;
     cursor: pointer;
@@ -36,67 +36,151 @@ button {
 }
 
 button:hover {
-    background-color: #51ae9e;
+    background-color: #06BEE1;
     color: #1d1f25;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 55px;
 }
 
 h2 {
-    padding-left: 10px;
+    font-size: 35px;
 }
 
 p {
-    font-size: 20px;
-    max-width: 650px;
+    font-size: 25px;
+    max-width: 850px;
     color: rgb(200, 200, 200);
-}
-
-li {
-    font-size: 20px;
-    padding-top: 20px;
 }
 
 hr {
     border-style: solid;
-    border-color: #1d1f25;
+    border-color: white;
+    width: 80%;
 }
 
-#social-media {
+#site-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 55%;
+}
+
+.top-container {
+    height: 50px;
+    text-align: end;
+    margin: 2% 15% 0% 0%;
     word-spacing: 20px;
+}
+
+.topbuttons {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topbuttons:hover {
+    text-decoration: underline;
+    color: #06BEE1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin: 4% 0% 6% 0%;
+}
+
+.text-container {
+    margin: 5% 0% 0% 20%;
+}
+
+.image-container {
+    max-width: 70%;
+    max-height: auto;
+    margin-left: 5%;
+}
+
+#email {
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
     text-align: center;
-    margin: 50px 250px 0px 0px;
+    text-indent: 10px;
+    border: #06BEE1 solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5%;
 }
 
-#email-img {
-    width: 25px;
-    height: 25px;
+#copy-email {
+    color: white;
+    display: table-cell;
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: default;
 }
 
-#welcome {
-    padding-top: 2%;
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
 }
 
-
-#welcome, #about, #skills, #projects, #data-container {
-    width: 650px;
-    flex: 1;
-    margin: 0 1em;
+.fade-in.show {
+    opacity: 1;
 }
 
-#buttons {
-    padding-top: 10px;
-    margin-left: 15%;
-    word-spacing: 20px;
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.1s ease-out;
 }
 
-#img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 10px solid #1d1f25;
+.fade-out.hide {
+    opacity: 0;
+}
+
+.social-media-container {
+    margin: 5% 0% 0% 25%;
+}
+
+.social-media {
+    filter: invert(52%) sepia(89%) saturate(6023%) hue-rotate(164deg) brightness(101%) contrast(101%);
+    margin: 0% 0% 0% 2%;
+}
+
+.about-container {
+    background-color: #0598b4;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin: 0% 0% 5% 0%;
+}
+
+.about-image {
+    width: 90%;
+    height: auto;
+}
+
+.about-text {
+    color: white;
+    font-size: 25px;
+}
+
+.skills-container {
+    margin: 0% 0% 5% 10%;
+}
+
+.skills-icons {
+    text-align: center;
+    margin-right: 10%;
+}
+
+.skills {
+    width: 128px;
+    height: 128px;
+    margin: 2% 0% 0% 2%;
 }
 
 .div-bordered {
@@ -108,18 +192,16 @@ hr {
     margin-top: 20px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 40px 0px 0px 100px;
-}
-
 mark.cyan {
-    color: #51ae9e;
+    color: #06BEE1;
     background: none;
 }
+
+mark.black {
+    color: #161925 ;
+    background: none;
+}
+
 
 
 @media screen and (max-width: 600px) {
@@ -141,11 +223,6 @@ mark.cyan {
     p {
         font-size: 25px;
         max-width: 100%;
-    }
-
-    li {
-        font-size: 30px;
-        padding-top: 20px;
     }
 
     main {
@@ -170,36 +247,4 @@ mark.cyan {
         margin: 0;
     }
 
-    #welcome {
-        text-align: center;
-        margin: 20% 0% 0% 25%;
-    }
-
-    #about, #skills, #projects {
-        width: 200%;
-        margin: 40px 20px 40px 10px;
-        text-align: center;
-    }
-
-    #img {
-        width: 100%;
-        height: 100%;
-        max-width: 350px;
-    }
-
-    #email {
-        font-size: 30px;
-    }
-
-    #email-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    #buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-    }
 }

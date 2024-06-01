@@ -13,62 +13,72 @@
 </head>
 <body>
     <main>
+        <div class="top-container">
+            <a href=""><img id="site-logo" src="assets/PNG/site-logo.png" alt="site-logo-image"></a>
+            <a href="" class="topbuttons">Home</a>
+            <a href="" class="topbuttons">About</a>
+            <a href="" class="topbuttons">Skills</a>
+            <a href="" class="topbuttons">Projects</a>
+            <a href="" class="topbuttons">Contact</a>
+        </div>
         <div class="container">
-            <section id="welcome">
-                <img id="img" src="assets/JPG/photo.jpg" alt="Arthur Dantas Portrait">
-                <h1>Hello, I'm <mark class="cyan">Arthur Dantas</mark></h1>
+            <div class="text-container">
+                <h1>Hello, I'm <mark class="cyan">Arthur</mark></h1>
                 <h1>a Back-End developer.</h1>
                 <p>I'm a Brazilian programming lover, I like to create simple, common and eye-pleasing interfaces.</p>
-                <div>
-                    <p id="email"><img id="email-img" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="gmail"> <mark class="cyan" style="padding-left: 15px;">dantas.arthur.contact@gmail.com</mark></p>
+                <div style="display: table;">
+                    <div id="email"><mark class="cyan" style="display: table-cell;">dantas.arthur.contact@gmail.com</mark></div>
+                    <div id="copy-email">⭠ Click to copy.</div>
                 </div>
-                <div id="buttons">
-                    <a href="https://github.com/LonelyALpHaz" target="_blank"><button>GitHub Profile</button></a>
-                    <button>Linkedin Profile</button>
+                <div class="social-media-container">
+                    <a href="https://github.com/LonelyALpHaz" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github-profile" width="45px" height="45px"></a>
+                    <a href="" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin-profile" width="45px" height="45px"></a>
+                    <a href="https://www.instagram.com/dantaas.arthur/" target="_blank"><img class="social-media" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram-profile" width="45px" height="45px"></a>
                 </div>
-            </section>
-            <section id="data-container">
-                <article id="about" class="div-bordered">
-                    <h2>About me</h2>
-                    <hr>
-                    <p>Hi! My name is <mark class="cyan">Arthur</mark>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using Python, as well as creating simple and beautiful interfaces with HTML and CSS.</p>
-                    <p>I have experience in developing interfaces with the Flet framework, and I am currently venturing into website creation. I love taking on new challenges and continuously learning to improve my skills and deliver high-quality projects.
-                    </p>
-                </article>
-                <article id="skills" class="div-bordered"">
-                    <h2>My skills</h2>
-                    <hr>
-                    <li style="padding-top: 20px; padding-bottom: 20px;"><mark class="cyan">Languages and Frameworks</mark></li>
-                    <div class="skills-icons">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" width="64px" height="64px" alt="Python">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" width="64px" height="64px" alt="JavaScript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" width="64px" height="64px" alt="HTML5">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" width="64px" height="64px" alt="CSS3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" width="64px" height="64px" alt="Markdown">
-                    </div>
-                    <li style="padding-top: 20px; padding-bottom: 20px;"><mark class="cyan">Tools</mark></li>
-                    <div class="skills-icons">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" width="64px" height="64px" alt="VSCode">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" height="64px" width="64px" alt="PyCharm">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" height="64px" width="64px" alt="Git">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" width="64px" height="64px" alt="GitHub">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" height="64px" width="64px" alt="Photoshop">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" width="64px" height="64px" alt="Notion">
-                    </div>
-                </article>
-                <article id="projects" class="div-bordered">
-                    <h2>My projects</h2>
-                    <hr>
-                    <li><a href="https://github.com/LonelyALpHaz/weather-app" target="_blank" style="color: #51ae9e;">Minimalistic Weather App</a></li>
-                    <p>The Minimalistic Weather App is an application made in Python that shows the date, time and weather of a given location. Interface made based on the Flet Framework and data collected using the OpenWeatherMap API.</p>
-                    <li><a href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank" style="color: #51ae9e;">3DS QR Code Generator</a></li>
-                    <p>The 3DS QR Code Generator is a program developed in Python with a CustomTKinter interface that generates qr codes based on public files from Google Drive or Archive.org to download games more simply on the Nintendo 3DS console.</p>
-                </article>
-            </section>
+            </div>
+            <div class="image-container">
+                <img src="assets/SVG/developer.svg" alt="developer-logo">
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/SVG/Typing-bro.svg" alt="laptop-image">
+            </div>
+            <div class="about-text-container">
+                <h1>About me</h1>
+                <hr>
+                <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using Python, as well as creating simple and beautiful interfaces with HTML and CSS.</p>
+                <p class="about-text">I have experience in developing interfaces with the Flet framework, and I am currently venturing into website creation. I love taking on new challenges and continuously learning to improve my skills and deliver high-quality projects.</p>
+            </div>
+        </div>
+        <div class="skills-container">
+            <h1>My skills</h1>
+            <hr>
+            <div class="skills-icons">
+                <h2>Languages and Frameworks</h2>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" alt="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" alt="HTML5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" alt="CSS3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" alt="Markdown">
+            </div>
+            <div class="skills-icons">
+                <h2>Programs and Tools</h2>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" alt="PyCharm">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" alt="Git">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" class="white-skill" alt="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" alt="Photoshop">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
+            </div>
+            <div class="projects-container">
+                <div></div>
+            </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Arthur Dantas. All rights reserved.</p>
+        <p id="footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
