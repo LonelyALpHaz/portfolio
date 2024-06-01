@@ -63,7 +63,7 @@ hr {
 #site-logo {
     width: 50px;
     height: 50px;
-    margin-right: 55%;
+    margin-right: 52%;
 }
 
 .top-container {
@@ -82,6 +82,12 @@ hr {
 .topbuttons:hover {
     text-decoration: underline;
     color: #06BEE1;
+}
+
+#dark-mode {
+    width: 32px;
+    height: auto;
+    cursor: pointer;
 }
 
 .container {
@@ -161,11 +167,24 @@ hr {
 .about-image {
     width: 90%;
     height: auto;
+    margin: 10% 0% 10% 20%;
+}
+
+#profile-picture {
+    width: 600px;
+    height: 600px;
+    border-radius: 360%;
+    border: 10px #161925 solid;
+}
+
+.about-text-container {
+    margin-top: 5%;
 }
 
 .about-text {
     color: white;
     font-size: 25px;
+    margin: 5% 20% 0% 0%;
 }
 
 .skills-container {
@@ -174,7 +193,7 @@ hr {
 
 .skills-icons {
     text-align: center;
-    margin-right: 10%;
+    margin: 5% 10% 0% 0%;
 }
 
 .skills {
@@ -183,23 +202,50 @@ hr {
     margin: 2% 0% 0% 2%;
 }
 
-.div-bordered {
-    border-color: #1d1f25;
-    border-style: solid;
-    box-shadow: 5px 5px 5px 5px #1d1f25;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #161925;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects-container {
+    background-color: #0598b4;
+    width: 100%;
+    height: auto;
 }
 
 mark.cyan {
     color: #06BEE1;
     background: none;
+    font-weight: bold;
 }
 
 mark.black {
     color: #161925 ;
     background: none;
+    font-weight: bold;
 }
 
 

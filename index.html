@@ -20,6 +20,7 @@
             <a href="" class="topbuttons">Skills</a>
             <a href="" class="topbuttons">Projects</a>
             <a href="" class="topbuttons">Contact</a>
+            <img src="assets/SVG/sun.svg" id="dark-mode" alt="light-dark-mode-button">
         </div>
         <div class="container">
             <div class="text-container">
@@ -32,7 +33,7 @@
                 </div>
                 <div class="social-media-container">
                     <a href="https://github.com/LonelyALpHaz" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github-profile" width="45px" height="45px"></a>
-                    <a href="" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin-profile" width="45px" height="45px"></a>
+                    <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin-profile" width="45px" height="45px"></a>
                     <a href="https://www.instagram.com/dantaas.arthur/" target="_blank"><img class="social-media" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram-profile" width="45px" height="45px"></a>
                 </div>
             </div>
@@ -42,37 +43,67 @@
         </div>
         <div class="about-container">
             <div class="about-image">
-                <img src="assets/SVG/Typing-bro.svg" alt="laptop-image">
+                <img id="profile-picture" src="assets/JPG/photo.jpg" alt="Arthur's profile picture">
             </div>
             <div class="about-text-container">
                 <h1>About me</h1>
                 <hr>
                 <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using Python, as well as creating simple and beautiful interfaces with HTML and CSS.</p>
-                <p class="about-text">I have experience in developing interfaces with the Flet framework, and I am currently venturing into website creation. I love taking on new challenges and continuously learning to improve my skills and deliver high-quality projects.</p>
+                <p class="about-text">I am a self-taught student currently exploring web development with <mark class="black">HHTML5</mark>, <mark class="black">CSS3</mark>, and <mark class="black">Javascript</mark>, although <mark class="black">Python</mark> is my platonic love. I am always striving to evolve my projects to deliver the best possible results.</p>
             </div>
         </div>
         <div class="skills-container">
             <h1>My skills</h1>
             <hr>
             <div class="skills-icons">
-                <h2>Languages and Frameworks</h2>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python" title="Python">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" alt="JavaScript">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" alt="HTML5">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" alt="CSS3">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" alt="Markdown">
-            </div>
+                <h2 style="padding-bottom: 2%;">Languages and Frameworks</h2>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python">
+                    <span class="tooltiptext">Python</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" alt="JavaScript">
+                    <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" alt="HTML5">
+                    <span class="tooltiptext">HTML5</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" alt="CSS3">
+                    <span class="tooltiptext">CSS3</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" alt="Markdown">
+                    <span class="tooltiptext">Markdown</span>
+                </div>
+            </div>            
             <div class="skills-icons">
-                <h2>Programs and Tools</h2>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" alt="PyCharm">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" alt="Git">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" class="white-skill" alt="GitHub">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" alt="Photoshop">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
-            </div>
-            <div class="projects-container">
-                <div></div>
+                <h2 style="padding-bottom: 2%;">Programs and Tools</h2>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
+                    <span class="tooltiptext">Visual Studio Code</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" alt="PyCharm">
+                    <span class="tooltiptext">Pycharm</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" alt="Git">
+                    <span class="tooltiptext">Git</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" class="white-skill" alt="GitHub">
+                    <span class="tooltiptext">Github</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" alt="Photoshop">
+                    <span class="tooltiptext">Photoshop</span>
+                </div>
+                <div class="tooltip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
+                    <span class="tooltiptext">Notion</span>
+                </div>
             </div>
         </div>
     </main>

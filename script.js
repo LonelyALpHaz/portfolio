@@ -7,7 +7,7 @@ span.onclick = function() {
     copied.classList.remove("fade-out", "hide");
     // Add fade-in class
     copied.classList.add("fade-in", "show");
-    copied.innerHTML = "Copied!";
+    copied.innerHTML = "✓ Copied!";
     setTimeout(function() {
         copied.classList.remove("fade-in", "show");
         copied.classList.add("fade-out");
