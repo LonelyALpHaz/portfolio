@@ -1,5 +1,9 @@
 /* style.css */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #161925;
     font-family: "Roboto Mono", monospace;
@@ -11,33 +15,25 @@ body {
 footer {
     padding: 1em 0;
     padding-left: 20px;
-    background-color: white;
+    background-color: #161925;
 }
 
 #footer-copy {
-    color: #161925;;
+    color: white;
 }
 
 button {
-    display: inline-block;
-    margin-top: 20px;
-    width: 180px;
-    height: 50px;
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    font-size: 15px;
-    background-color: #20232c;
-    color: #06BEE1;
-    border: solid #1d1f25;
-    border-radius: 10px;
+    display: block;
+    background: none;
+    border: none;
     cursor: pointer;
-    transition-duration: 0.4s;
-    box-shadow: 5px 5px 5px 5px #1d1f25;
+    position: fixed;
+    margin: 41% 0% 0% 95%;
 }
 
-button:hover {
-    background-color: #06BEE1;
-    color: #1d1f25;
+.gotop {
+    width: 64px;
+    height: 64px;
 }
 
 h1 {
@@ -77,6 +73,7 @@ hr {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .topbuttons:hover {
@@ -154,14 +151,14 @@ hr {
     margin: 0% 0% 0% 2%;
 }
 
-.about-container {
+#about-container {
     background-color: #0598b4;
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
-    margin: 0% 0% 5% 0%;
+    margin: 0;
 }
 
 .about-image {
@@ -187,13 +184,13 @@ hr {
     margin: 5% 20% 0% 0%;
 }
 
-.skills-container {
-    margin: 0% 0% 5% 10%;
+#skills-container {
+    margin: 5% 0% 0% 10%;
 }
 
 .skills-icons {
     text-align: center;
-    margin: 5% 10% 0% 0%;
+    margin: 5% 10% 5% 0%;
 }
 
 .skills {
@@ -230,7 +227,7 @@ hr {
     opacity: 1;
 }
 
-.projects-container {
+#projects-container {
     background-color: #0598b4;
     width: 100%;
     height: auto;

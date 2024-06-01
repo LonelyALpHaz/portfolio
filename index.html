@@ -12,13 +12,14 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><img class="gotop" src="assets/SVG/arrow-top.svg" alt="arrow-up"></button>
     <main>
         <div class="top-container">
             <a href=""><img id="site-logo" src="assets/PNG/site-logo.png" alt="site-logo-image"></a>
-            <a href="" class="topbuttons">Home</a>
-            <a href="" class="topbuttons">About</a>
-            <a href="" class="topbuttons">Skills</a>
-            <a href="" class="topbuttons">Projects</a>
+            <a class="topbuttons">Home</a>
+            <a href="#about-container" class="topbuttons">About</a>
+            <a href="#skills-container" class="topbuttons">Skills</a>
+            <a href="#projects-container" class="topbuttons">Projects</a>
             <a href="" class="topbuttons">Contact</a>
             <img src="assets/SVG/sun.svg" id="dark-mode" alt="light-dark-mode-button">
         </div>
@@ -41,7 +42,7 @@
                 <img src="assets/SVG/developer.svg" alt="developer-logo">
             </div>
         </div>
-        <div class="about-container">
+        <div id="about-container">
             <div class="about-image">
                 <img id="profile-picture" src="assets/JPG/photo.jpg" alt="Arthur's profile picture">
             </div>
@@ -52,7 +53,7 @@
                 <p class="about-text">I am a self-taught student currently exploring web development with <mark class="black">HHTML5</mark>, <mark class="black">CSS3</mark>, and <mark class="black">Javascript</mark>, although <mark class="black">Python</mark> is my platonic love. I am always striving to evolve my projects to deliver the best possible results.</p>
             </div>
         </div>
-        <div class="skills-container">
+        <div id="skills-container">
             <h1>My skills</h1>
             <hr>
             <div class="skills-icons">
@@ -104,6 +105,12 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
                     <span class="tooltiptext">Notion</span>
                 </div>
+            </div>
+        </div>
+        <div id="projects-container">
+            <h1>My Projects</h1>
+            <hr>
+            <div>
             </div>
         </div>
     </main>
