@@ -100,6 +100,9 @@ hr {
     hr {
         border-color: #161925;
     }
+    #copy-email {
+        color: #161925;
+    }
     #dark-mode-button {
         background: none;
         filter: brightness(0%) contrast(50%);
