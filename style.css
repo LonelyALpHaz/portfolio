@@ -59,7 +59,7 @@ hr {
 #site-logo {
     width: 50px;
     height: 50px;
-    margin-right: 52%;
+    margin-right: 51%;
 }
 
 .top-container {
@@ -81,10 +81,30 @@ hr {
     color: #06BEE1;
 }
 
-#dark-mode {
+#dark-mode-button {
     width: 32px;
     height: auto;
     cursor: pointer;
+    background: none;
+}
+
+.dark-mode {
+    background-color: #F8F1FF;
+    color: #161925;
+    .topbuttons {
+        color: #161925;
+    }
+    p {
+        color: #161925;
+    }
+    hr {
+        border-color: #161925;
+    }
+    #dark-mode-button {
+        background: none;
+        filter: brightness(0%) contrast(50%);
+        
+    }
 }
 
 .container {
@@ -185,7 +205,7 @@ hr {
 }
 
 #skills-container {
-    margin: 5% 0% 0% 10%;
+    margin: 3% 0% 6% 10%;
 }
 
 .skills-icons {

@@ -1,3 +1,15 @@
+// Turn on/off dark mode
+
+function darkMode() {
+    var element = document.body;
+    var darkbutton = document.getElementById("dark-mode-button");
+    if (element.classList.toggle("dark-mode")) {
+        darkbutton.src = "assets/SVG/moon.svg";
+    } else {
+        darkbutton.src = "assets/SVG/sun.svg";
+    };
+}
+
 // Click and Copy email function
 
 var span = document.getElementById("email");
@@ -42,4 +54,29 @@ function scroolFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+// Auto scrool to a specific div
+
+document.querySelectorAll('.topbuttons').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            const offset = 50; // Ajuste este valor conforme necessário
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+// Refresh page function
+
+function refreshPage() {
+    window.location.reload();
 }
