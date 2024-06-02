@@ -15,8 +15,8 @@
     <button onclick="topFunction()" id="topbtn" title="Go to top"><img class="gotop" src="assets/SVG/arrow-top.svg" alt="arrow-up"></button>
     <main>
         <div class="top-container">
-            <a onclick="refreshPage()"><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site-logo-image"></a>
-            <a class="topbuttons">Home</a>
+            <a><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site-logo-image"></a>
+            <a onclick="refreshPage()" class="topbuttons">Home</a>
             <a href="#about-container" class="topbuttons">About</a>
             <a href="#skills-container" class="topbuttons">Skills</a>
             <a href="#projects-container" class="topbuttons">Projects</a>
@@ -49,8 +49,8 @@
             <div class="about-text-container">
                 <h1>About me</h1>
                 <hr>
-                <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using Python, as well as creating simple and beautiful interfaces with HTML and CSS.</p>
-                <p class="about-text">I am a self-taught student currently exploring web development with <mark class="black">HHTML5</mark>, <mark class="black">CSS3</mark>, and <mark class="black">Javascript</mark>, although <mark class="black">Python</mark> is my platonic love. I am always striving to evolve my projects to deliver the best possible results.</p>
+                <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="black">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> and <mark class="black">Javascript</mark>.</p>
+                <p class="about-text">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
             </div>
         </div>
         <div id="skills-container">
@@ -108,10 +108,33 @@
             </div>
         </div>
         <div id="projects-container">
-            <h1>My Projects</h1>
-            <hr>
-            <div>
+            <h1 style="text-align: start; margin-left: 10%;">My Projects</h1>
+            <hr style="margin-right: 5%;">
+            <div class="projects">
+                <div class="card">
+                    <div class="card-project">
+                        <img class="card-image" src="assets/projects/weather.png" width="300px" alt="weather-app">
+                    </div>
+                    <div class="card-data">
+                        <h2>Weather App</h2>
+                        <p class="card-text">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
+                        <a class="card-repo" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-project">
+                        <img class="card-image" src="assets/projects/qrcode.png" alt="qr-code-generator" width="300px">
+                    </div>
+                    <div class="card-data">
+                        <h2>3DS QR Codes</h2>
+                        <p class="card-text">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
+                        <a class="card-repo" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div id="contact-container">
+            
         </div>
     </main>
     <footer>

@@ -106,7 +106,9 @@ hr {
     #dark-mode-button {
         background: none;
         filter: brightness(0%) contrast(50%);
-        
+    }
+    .card-text {
+        color: rgb(200, 200, 200);
     }
 }
 
@@ -137,6 +139,14 @@ hr {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 5%;
+}
+
+#email:hover {
+    background-color: #06BEE1;
+    mark {
+        color: white;
+        font-weight: normal;
+    }
 }
 
 #copy-email {
@@ -254,6 +264,63 @@ hr {
     background-color: #0598b4;
     width: 100%;
     height: auto;
+    padding-bottom: 1px;
+    padding-top: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 5% 0% 10% 25%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.card-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(220, 220, 300);
+}
+
+.card-data {
+    background-color: #161925;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card-repo {
+    color: #06BEE1;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 70%;
+}
+
+.card-repo:hover {
+    text-decoration: underline;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 mark.cyan {
