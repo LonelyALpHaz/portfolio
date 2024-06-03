@@ -54,7 +54,7 @@
             </div>
         </div>
         <div id="skills-container">
-            <h1>My skills</h1>
+            <h1 class="skills-title">My skills</h1>
             <hr>
             <div class="skills-icons">
                 <h2 style="padding-bottom: 2%;">Languages and Frameworks</h2>
@@ -108,8 +108,8 @@
             </div>
         </div>
         <div id="projects-container">
-            <h1 style="text-align: start; margin-left: 10%;">My Projects</h1>
-            <hr style="margin-right: 5%;">
+            <h1 class="projects-title">My Projects</h1>
+            <hr>
             <div class="projects">
                 <div class="card">
                     <div class="card-project">
@@ -140,23 +140,25 @@
             </div>
             <div class="contact-data">
                 <div class="contact-item">
-                    <img class="contact-icon" src="assets/SVG/phone.svg" alt="phone" width="32px" height="32px">
+                    <img id="phone-number" class="contact-icon" src="assets/SVG/phone.svg" alt="phone" width="32px" height="32px">
                     <h3 class="contact-text">+55 (83) 98843-1889</h3>
                 </div>
                 <div class="contact-item">
                     <img class="contact-icon" src="assets/SVG/email.svg" alt="email" width="32px" height="32px">
                     <h3 class="contact-text">dantas.arthur.contact@gmail.com</h3>
                 </div>
-                <div class="contact-item">
-                    <img class="invert-color" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="phone" width="32px" height="32px">
-                    <a href="https://github.com/LonelyALpHaz" target="_blank" class="contact-text"><h3>GitHub</h3></a>
-                </div>
-                <div class="contact-item">
-                    <img class="invert-color" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="phone" width="32px" height="32px">
-                    <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-text"><h3>Linkedin</h3></a>
+                <div class="contact-icon-wrapper">
+                    <div class="contact-item">
+                        <img class="contact-link" style="filter: invert();" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="phone" width="32px" height="32px">
+                        <a href="https://github.com/LonelyALpHaz" target="_blank" class="contact-text"><h3>GitHub</h3></a>
+                    </div>
+                    <div class="contact-item">
+                        <img class="contact-link" style="filter: invert();" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="phone" width="32px" height="32px">
+                        <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-text"><h3>Linkedin</h3></a>
+                    </div>
                 </div>
             </div>
-        </div>              
+        </div>
     </main>
     <footer>
         <p id="footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
