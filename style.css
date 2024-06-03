@@ -14,8 +14,8 @@ body {
 
 footer {
     padding: 1em 0;
-    padding-left: 20px;
-    background-color: #161925;
+    padding-left: 34%;
+    background-color:#11131c;
 }
 
 #footer-copy {
@@ -109,6 +109,15 @@ hr {
     }
     .card-text {
         color: rgb(200, 200, 200);
+    }
+    .contact-text{
+        color: #161925;
+    }
+    .contact-icon {
+        filter: invert();
+    }
+    #invert-color {
+        filter: none;
     }
 }
 
@@ -323,6 +332,36 @@ hr {
     border-bottom-left-radius: 20px;
 }
 
+#contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 2% 0% 2% 5%;
+}
+
+.logo-bottom {
+    width: 150px;
+    height: 150px;
+    margin-left: 12%;
+}
+
+
+#invert-color {
+    filter: invert();
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.contact-text {
+    margin-left: 2%;
+    text-decoration: none;
+    color: white;
+}
+
 mark.cyan {
     color: #06BEE1;
     background: none;
@@ -334,7 +373,6 @@ mark.black {
     background: none;
     font-weight: bold;
 }
-
 
 
 @media screen and (max-width: 600px) {

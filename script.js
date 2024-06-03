@@ -4,12 +4,15 @@ function darkMode() {
     var element = document.body;
     var darkbutton = document.getElementById("dark-mode-button");
     var siteLogo = document.getElementById("site-logo");
+    var logoBottom =document.getElementById("logo-bottom");
     if (element.classList.toggle("dark-mode")) {
         darkbutton.src = "assets/SVG/moon.svg";
         siteLogo.src = "assets/PNG/site-logo-light.png"
+        logoBottom.src = "assets/PNG/site-logo-light.png"
     } else {
         darkbutton.src = "assets/SVG/sun.svg";
         siteLogo.src = "assets/PNG/site-logo-dark.png"
+        logoBottom.src = "assets/PNG/site-logo-dark.png"
     };
 }
 
