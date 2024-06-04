@@ -413,7 +413,7 @@ mark.black {
     }
     .container {
         display: block;
-        margin: 5% 5%;
+        margin: 5% 5% 0% 2%;
         width: 160%;
         text-align: center;
         p {
@@ -443,9 +443,14 @@ mark.black {
         grid-template-columns: 1fr;
         width: 180%;
     }
+    .about-text-container {
+        h1 {
+            margin-right: 5%;
+        }
+    }
     .about-image {
         width: 30%;
-        margin: 5% 0% 0% 27%;
+        margin: 5% 0% 2% 25%;
     }
     #profile-picture {
         width: 150%;
@@ -464,7 +469,7 @@ mark.black {
         margin: 5% 0% 5% 5%;
     }
     .skills-icons {
-        margin: 5% 5% 5% 5%;
+        margin: 5% 5% 5% 10%;
     }
     .skills {
         width: 70px;
