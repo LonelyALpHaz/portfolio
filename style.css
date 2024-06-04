@@ -116,7 +116,7 @@ hr {
     .contact-icon {
         filter: invert();
     }
-    .invert-color {
+    .contact-link {
         filter: none;
     }
 }
@@ -360,6 +360,10 @@ hr {
     color: white;
 }
 
+.contact-link {
+    filter: invert();
+}
+
 mark.cyan {
     color: #06BEE1;
     background: none;
@@ -384,7 +388,7 @@ mark.black {
         text-align: center;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
     h2 {
@@ -396,11 +400,16 @@ mark.black {
         max-width: 100%;
         padding: 0 10px;
     }
-    .top-container {
+    #topbtn {
         display: none;
     }
-    .image-container {
+    .top-container {
         display: none;
+        margin: 5% 0% 20% 0%;
+        word-spacing: 0px;
+    }
+    .image-container {
+        margin-left: 17%;
     }
     .container {
         display: block;
@@ -410,6 +419,7 @@ mark.black {
         p {
             max-width: 80%;
             margin-left: 7%;
+            font-size: 15px;
         }
     }
     .text-container {
@@ -434,8 +444,8 @@ mark.black {
         width: 180%;
     }
     .about-image {
-        width: 25%;
-        margin: 5% 0% 0% 30%;
+        width: 30%;
+        margin: 5% 0% 0% 27%;
     }
     #profile-picture {
         width: 150%;
@@ -444,10 +454,11 @@ mark.black {
         border: 5px #161925 solid;
     }
     .about-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0% 0% 5% 12%;
-        max-width: 450px;
+        max-width: 5000px;
         text-align: center;
+        margin-right: 15%;
     }
     #skills-container {
         width: 170%;
@@ -457,8 +468,8 @@ mark.black {
         margin: 5% 5% 5% 0%;
     }
     .skills {
-        width: 64px;
-        height: 64px;
+        width: 70px;
+        height: 70px;
         margin: 2% 5%;
     }
     .tooltip .tooltiptext {
@@ -475,14 +486,19 @@ mark.black {
         margin-left: 20%;
     }
     .card {
+        margin-top: 5%;
         flex-direction: column;
         max-width: 100%;
     }
     .card-data {
         padding: 10px;
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
     }
     .card-repo {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-left: auto;
         text-align: right;
         margin-right: 5%;
@@ -490,17 +506,20 @@ mark.black {
     #contact-container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 0px;
         margin: 2% 0% 2% 70%;
         text-align: center;
     }
+    .info {
+        margin-left: 5%;
+    }
     #phone-number {
-        margin-left: 12%;
+        margin-left: 15%;
     }
     .contact-item {
         display: flex;
         align-items: center;
-        margin-bottom: 2px;
+        margin-bottom: 2%;
     }
     .contact-data {
         margin-left: 5%;
