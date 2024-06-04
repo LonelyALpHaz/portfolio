@@ -400,7 +400,7 @@ mark.black {
         max-width: 100%;
         padding: 0 10px;
     }
-    #topbtn {
+    #topbtn, .gotop {
         display: none;
     }
     .top-container {
@@ -455,17 +455,16 @@ mark.black {
     }
     .about-text {
         font-size: 1.2rem;
-        margin: 0% 0% 5% 12%;
-        max-width: 5000px;
+        margin: 0% 0% 5% 9%;
+        max-width: 500px;
         text-align: center;
-        margin-right: 15%;
     }
     #skills-container {
         width: 170%;
         margin: 5% 0% 5% 5%;
     }
     .skills-icons {
-        margin: 5% 5% 5% 0%;
+        margin: 5% 5% 5% 5%;
     }
     .skills {
         width: 70px;
@@ -516,6 +515,9 @@ mark.black {
     #phone-number {
         margin-left: 15%;
     }
+    #email-contact {
+        padding-right: 30px;
+    }
     .contact-item {
         display: flex;
         align-items: center;
@@ -528,7 +530,7 @@ mark.black {
         display: flex;
         align-items: center;
         column-gap: 50px;
-        margin-left: 12%;
+        margin-left: 15%;
     }
     .contact-text {
         margin-left: 2%;
