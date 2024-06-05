@@ -53,7 +53,7 @@ p {
 hr {
     border-style: solid;
     border-color: white;
-    width: 80%;
+    width: 100%;
 }
 
 #site-logo {
@@ -121,10 +121,10 @@ hr {
     }
 }
 
-.container {
+#home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 0px;
     margin: 4% 0% 6% 0%;
 }
 
@@ -189,7 +189,7 @@ hr {
 }
 
 .social-media {
-    filter: invert(52%) sepia(89%) saturate(6023%) hue-rotate(164deg) brightness(101%) contrast(101%);
+    filter: invert(60%) sepia(90%) saturate(6050%) hue-rotate(165deg) brightness(100%) contrast(100%);
     margin: 0% 0% 0% 2%;
 }
 
@@ -199,8 +199,11 @@ hr {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
     margin: 0;
+    hr {
+        width: 85%;
+        margin-right: 20%;
+    }
 }
 
 .about-image {
@@ -217,22 +220,29 @@ hr {
 }
 
 .about-text-container {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .about-text {
     color: white;
     font-size: 25px;
+    max-width: 900px;
     margin: 5% 20% 0% 0%;
 }
 
 #skills-container {
-    margin: 3% 0% 6% 10%;
+    margin: 5% 0% 5%;
+    h1 {
+        margin-left: 10%;
+    }
+    hr {
+        width: 80%;
+    }
 }
 
 .skills-icons {
     text-align: center;
-    margin: 5% 10% 5% 0%;
+    margin: 5% 10% 5% 10%;
 }
 
 .skills {
@@ -275,6 +285,12 @@ hr {
     height: auto;
     padding-bottom: 1px;
     padding-top: 20px;
+    h1 {
+        margin-left: 10%;
+    }
+    hr {
+        width: 80%;
+    }
 }
 
 .projects {
@@ -341,11 +357,14 @@ hr {
     justify-content: center;
     gap: 100px;
     margin: 2% 0% 2% 5%;
+    h2 {
+        font-weight: normal;
+        font-size: 25px;
+    }
 }
 .logo-bottom {
     width: 150px;
     height: 150px;
-    margin-left: 12%;
 }
 
 .contact-item {
@@ -411,7 +430,7 @@ mark.black {
     .image-container {
         margin-left: 17%;
     }
-    .container {
+    .home-container {
         display: block;
         margin: 5% 5% 0% 2%;
         width: 160%;

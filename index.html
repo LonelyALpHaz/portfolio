@@ -12,154 +12,174 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!--Button to go back to the top-->
     <button onclick="topFunction()" id="topbtn" title="Go to top"><img class="gotop" src="assets/SVG/arrow-top.svg" alt="arrow-up"></button>
     <main>
-        <div class="top-container">
-            <a><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site-logo-image"></a>
-            <a onclick="refreshPage()" class="topbuttons">Home</a>
-            <a href="#about-container" class="topbuttons">About</a>
-            <a href="#skills-container" class="topbuttons">Skills</a>
-            <a href="#projects-container" class="topbuttons">Projects</a>
-            <a href="#contact-container" class="topbuttons">Contact</a>
-            <img src="assets/SVG/sun.svg" id="dark-mode-button" onclick="darkMode()" class="dark-mode" alt="light-dark-mode-button">
-        </div>
-        <div class="container">
-            <div class="text-container">
-                <h1>Hello, I'm <mark class="cyan">Arthur</mark></h1>
-                <h1>a Back-End developer.</h1>
-                <p>I'm a Brazilian programming lover, I like to create simple, common and eye-pleasing interfaces.</p>
-                <div style="display: table;">
-                    <div id="email"><mark class="cyan" style="display: table-cell;">dantas.arthur.contact@gmail.com</mark></div>
-                    <div id="copy-email">⭠ Click to copy.</div>
+        <!--Top navigator bar-->
+        <section class="top-container">
+            <div>
+                <a><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site-logo-image"></a>
+                <a onclick="refreshPage()" class="topbuttons">Home</a>
+                <a href="#about-container" class="topbuttons">About</a>
+                <a href="#skills-container" class="topbuttons">Skills</a>
+                <a href="#projects-container" class="topbuttons">Projects</a>
+                <a href="#contact-container" class="topbuttons">Contact</a>
+                <img src="assets/SVG/sun.svg" id="dark-mode-button" onclick="darkMode()" class="dark-mode" alt="light-dark-mode-button">
+            </div>
+        </section>
+        <!--Home section with welcome text and social media-->
+        <section>
+            <div id="home-container">
+                <div class="text-container">
+                    <h1>Hello, I'm <mark class="cyan">Arthur</mark></h1>
+                    <h1>a Back-End developer.</h1>
+                    <p>I'm a Brazilian programming lover, I like to create simple, common and eye-pleasing interfaces.</p>
+                    <div style="display: table;">
+                        <div id="email"><mark class="cyan" style="display: table-cell;">dantas.arthur.contact@gmail.com</mark></div>
+                        <div id="copy-email">⭠ Click to copy.</div>
+                    </div>
+                    <div class="social-media-container">
+                        <a href="https://github.com/LonelyALpHaz" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github-profile" width="45px"></a>
+                        <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin-profile" width="45px"></a>
+                        <a href="https://www.instagram.com/dantaas.arthur/" target="_blank"><img class="social-media" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram-profile" width="45px"></a>
+                    </div>
                 </div>
-                <div class="social-media-container">
-                    <a href="https://github.com/LonelyALpHaz" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github-profile" width="45px" height="45px"></a>
-                    <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="social-media" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin-profile" width="45px" height="45px"></a>
-                    <a href="https://www.instagram.com/dantaas.arthur/" target="_blank"><img class="social-media" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram-profile" width="45px" height="45px"></a>
+                <div class="image-container">
+                    <img src="assets/SVG/developer.svg" alt="developer-logo">
                 </div>
             </div>
-            <div class="image-container">
-                <img src="assets/SVG/developer.svg" alt="developer-logo">
+        </section>
+        <!--About section with personal data about me-->
+        <section>
+            <div id="about-container">
+                <div class="about-image">
+                    <img id="profile-picture" src="assets/JPG/photo.jpg" alt="Arthur's profile picture">
+                </div>
+                <div class="about-text-container">
+                    <h1>About me</h1>
+                    <hr>
+                    <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="black">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> and <mark class="black">Javascript</mark>.</p>
+                    <p class="about-text">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
+                </div>
             </div>
-        </div>
-        <div id="about-container">
-            <div class="about-image">
-                <img id="profile-picture" src="assets/JPG/photo.jpg" alt="Arthur's profile picture">
-            </div>
-            <div class="about-text-container">
-                <h1>About me</h1>
+        </section>
+        <!--Skills container with languages, frameworks and tools-->
+        <section>
+            <div id="skills-container">
+                <h1>My skills</h1>
                 <hr>
-                <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="black">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> and <mark class="black">Javascript</mark>.</p>
-                <p class="about-text">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
-            </div>
-        </div>
-        <div id="skills-container">
-            <h1 class="skills-title">My skills</h1>
-            <hr>
-            <div class="skills-icons">
-                <h2 style="padding-bottom: 2%;">Languages and Frameworks</h2>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python">
-                    <span class="tooltiptext">Python</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" alt="JavaScript">
-                    <span class="tooltiptext">JavaScript</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" alt="HTML5">
-                    <span class="tooltiptext">HTML5</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" alt="CSS3">
-                    <span class="tooltiptext">CSS3</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" alt="Markdown">
-                    <span class="tooltiptext">Markdown</span>
-                </div>
-            </div>            
-            <div class="skills-icons">
-                <h2 style="padding-bottom: 2%;">Programs and Tools</h2>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
-                    <span class="tooltiptext">Visual Studio Code</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" alt="PyCharm">
-                    <span class="tooltiptext">Pycharm</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" alt="Git">
-                    <span class="tooltiptext">Git</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" class="white-skill" alt="GitHub">
-                    <span class="tooltiptext">Github</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" alt="Photoshop">
-                    <span class="tooltiptext">Photoshop</span>
-                </div>
-                <div class="tooltip">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
-                    <span class="tooltiptext">Notion</span>
-                </div>
-            </div>
-        </div>
-        <div id="projects-container">
-            <h1 class="projects-title">My projects</h1>
-            <hr>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-project">
-                        <img class="card-image" src="assets/projects/weather.png" width="300px" alt="weather-app">
+                <div class="skills-icons">
+                    <h2 style="padding-bottom: 2%;">Languages and Frameworks</h2>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python">
+                        <span class="tooltiptext">Python</span>
                     </div>
-                    <div class="card-data">
-                        <h2>Weather App</h2>
-                        <p class="card-text">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
-                        <a class="card-repo" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills" alt="JavaScript">
+                        <span class="tooltiptext">JavaScript</span>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-project">
-                        <img class="card-image" src="assets/projects/qrcode.png" alt="qr-code-generator" width="300px">
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills" alt="HTML5">
+                        <span class="tooltiptext">HTML5</span>
                     </div>
-                    <div class="card-data">
-                        <h2>3DS QR Codes</h2>
-                        <p class="card-text">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
-                        <a class="card-repo" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills" alt="CSS3">
+                        <span class="tooltiptext">CSS3</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" class="skills" alt="Markdown">
+                        <span class="tooltiptext">Markdown</span>
+                    </div>
+                </div>            
+                <div class="skills-icons">
+                    <h2 style="padding-bottom: 2%;">Programs and Tools</h2>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
+                        <span class="tooltiptext">Visual Studio Code</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" class="skills" alt="PyCharm">
+                        <span class="tooltiptext">Pycharm</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills" alt="Git">
+                        <span class="tooltiptext">Git</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="skills" class="white-skill" alt="GitHub">
+                        <span class="tooltiptext">Github</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="skills" alt="Photoshop">
+                        <span class="tooltiptext">Photoshop</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" class="skills" alt="Notion">
+                        <span class="tooltiptext">Notion</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact-container">
-            <div class="info">
-                <img id="logo-bottom" src="assets/PNG/site-logo-dark.png" alt="site-logo">
-                <h2 style="font-weight: normal; font-size: 25px;">Contact me at:</h2>
+        </section>
+        <!--Projects section with some of my projects-->
+        <section>
+            <div id="projects-container">
+                <h1>My projects</h1>
+                <hr>
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-project">
+                            <img class="card-image" src="assets/projects/weather.png" width="300px" alt="weather-app">
+                        </div>
+                        <div class="card-data">
+                            <h2>Weather App</h2>
+                            <p class="card-text">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
+                            <a class="card-repo" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <img class="card-image" src="assets/projects/qrcode.png" alt="qr-code-generator" width="300px">
+                        </div>
+                        <div class="card-data">
+                            <h2>3DS QR Codes</h2>
+                            <p class="card-text">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
+                            <a class="card-repo" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-data">
-                <div class="contact-item">
-                    <img id="phone-number" class="contact-icon" src="assets/SVG/phone.svg" alt="phone" width="32px" height="32px">
-                    <h3 class="contact-text">+55 (83) 98843-1889</h3>
+        </section>
+        <!--Contact section with social media-->
+        <section>
+            <div id="contact-container">
+                <div class="info">
+                    <img id="logo-bottom" src="assets/PNG/site-logo-dark.png" alt="site-logo">
+                    <h2>Contact me at:</h2>
                 </div>
-                <div id="email-contact" class="contact-item">
-                    <img class="contact-icon" src="assets/SVG/email.svg" alt="email" width="32px" height="32px">
-                    <h3 class="contact-text">dantas.arthur.contact@gmail.com</h3>
-                </div>
-                <div class="contact-icon-wrapper">
+                <div class="contact-data">
                     <div class="contact-item">
-                        <img class="contact-link" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="phone" width="32px" height="32px">
-                        <a href="https://github.com/LonelyALpHaz" target="_blank" class="contact-text"><h3>GitHub</h3></a>
+                        <img id="phone-number" class="contact-icon" src="assets/SVG/phone.svg" alt="phone" width="32px">
+                        <h3 class="contact-text">+55 (83) 98843-1889</h3>
                     </div>
-                    <div class="contact-item">
-                        <img class="contact-link" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="phone" width="32px" height="32px">
-                        <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-text"><h3>Linkedin</h3></a>
+                    <div id="email-contact" class="contact-item">
+                        <img class="contact-icon" src="assets/SVG/email.svg" alt="email" width="32px">
+                        <h3 class="contact-text">dantas.arthur.contact@gmail.com</h3>
+                    </div>
+                    <div class="contact-icon-wrapper">
+                        <div class="contact-item">
+                            <img class="contact-link" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="phone" width="32px">
+                            <a href="https://github.com/LonelyALpHaz" target="_blank" class="contact-text"><h3>GitHub</h3></a>
+                        </div>
+                        <div class="contact-item">
+                            <img class="contact-link" class="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="phone" width="32px">
+                            <a href="https://www.linkedin.com/in/arthur-dantas-658506310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-text"><h3>Linkedin</h3></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+    <!--Footer with copyright-->
     <footer>
         <p id="footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
     </footer>
