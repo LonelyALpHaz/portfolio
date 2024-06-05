@@ -1,5 +1,6 @@
 /* style.css */
 
+/* Body, headers, button and other elements */
 html {
     scroll-behavior: smooth;
 }
@@ -31,11 +32,6 @@ button {
     margin: 41% 0% 0% 95%;
 }
 
-.gotop {
-    width: 64px;
-    height: 64px;
-}
-
 h1 {
     font-size: 3rem;
 }
@@ -54,6 +50,14 @@ hr {
     border-style: solid;
     border-color: white;
     width: 100%;
+}
+
+/* Top menu navigator bar, go to top button and dark mode*/
+
+.gotop {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(1px 1px 20px #11131c);
 }
 
 #site-logo {
@@ -120,6 +124,8 @@ hr {
         filter: none;
     }
 }
+
+/* Home container and it's elements*/
 
 #home-container {
     display: grid;
@@ -193,6 +199,8 @@ hr {
     margin: 0% 0% 0% 2%;
 }
 
+/* About container and it's elements*/
+
 #about-container {
     background-color: #0598b4;
     width: 100%;
@@ -229,6 +237,8 @@ hr {
     max-width: 900px;
     margin: 5% 20% 0% 0%;
 }
+
+/* Skills container and it's elements*/
 
 #skills-container {
     margin: 5% 0% 5%;
@@ -278,6 +288,8 @@ hr {
     visibility: visible;
     opacity: 1;
 }
+
+/* Projects container and it's elements*/
 
 #projects-container {
     background-color: #0598b4;
@@ -352,6 +364,8 @@ hr {
     border-bottom-left-radius: 20px;
 }
 
+/* Contact container and it's elements*/
+
 #contact-container {
     display: flex;
     justify-content: center;
@@ -362,6 +376,13 @@ hr {
         font-size: 25px;
     }
 }
+
+.info {
+    img {
+        margin-left: 2%;
+    }
+}
+
 .logo-bottom {
     width: 150px;
     height: 150px;
@@ -383,6 +404,8 @@ hr {
     filter: invert();
 }
 
+/* Marks definition colors */
+
 mark.cyan {
     color: #06BEE1;
     background: none;
@@ -395,6 +418,7 @@ mark.black {
     font-weight: bold;
 }
 
+/* Media queries */
 
 @media screen and (max-width: 600px) {
     body {
@@ -427,26 +451,27 @@ mark.black {
         margin: 5% 0% 20% 0%;
         word-spacing: 0px;
     }
-    .image-container {
-        margin-left: 17%;
-    }
-    .home-container {
+    #home-container {
         display: block;
-        margin: 5% 5% 0% 2%;
+        margin: 5% 5% 0% 5%;
         width: 160%;
         text-align: center;
         p {
             max-width: 80%;
             margin-left: 7%;
-            font-size: 15px;
+            font-size: 20px;
         }
     }
     .text-container {
         margin-left: 8%;
     }
+    .image-container {
+        display: none;
+    }
     .social-media-container {
         text-align: center;
         margin-right: 30%;
+        margin-bottom: 5%;
     }
     .social-media {
         margin: 0 5px;
@@ -466,10 +491,16 @@ mark.black {
         h1 {
             margin-right: 5%;
         }
+        p {
+            font-size: 20px;
+        }
+        hr {
+            margin-left: 6%;
+        }
     }
     .about-image {
         width: 30%;
-        margin: 5% 0% 2% 25%;
+        margin: 5% 0% 0% 25%;
     }
     #profile-picture {
         width: 150%;
@@ -485,7 +516,11 @@ mark.black {
     }
     #skills-container {
         width: 170%;
-        margin: 5% 0% 5% 5%;
+        margin: 5% 0% 5%;
+        text-align: center;
+        h1 {
+            margin-right: 10%;
+        }
     }
     .skills-icons {
         margin: 5% 5% 5% 10%;
@@ -500,6 +535,9 @@ mark.black {
     }
     #projects-container {
         width: 180%;
+        h1 {
+            margin-right: 12%;
+        }
     }
     .projects {
         margin: 5% 5%;
@@ -534,7 +572,7 @@ mark.black {
         text-align: center;
     }
     .info {
-        margin-left: 5%;
+        display: none;
     }
     #phone-number {
         margin-left: 15%;
