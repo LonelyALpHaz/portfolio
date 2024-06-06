@@ -13,18 +13,26 @@
 </head>
 <body>
     <!--Button to go back to the top-->
-    <button onclick="topFunction()" id="topbtn" title="Go to top"><img class="gotop" src="assets/SVG/arrow-top.svg" alt="arrow-up"></button>
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><img class="gotop" src="assets/SVG/site/arrow-top.svg" alt="arrow-up"></button>
     <main>
         <!--Top navigator bar-->
         <section>
-            <div class="top-container">
-                <a><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site-logo-image"></a>
-                <a onclick="refreshPage()" class="topbuttons">Home</a>
-                <a href="#about-container" class="topbuttons">About</a>
-                <a href="#skills-container" class="topbuttons">Skills</a>
-                <a href="#projects-container" class="topbuttons">Projects</a>
-                <a href="#contact-container" class="topbuttons">Contact</a>
-                <img src="assets/SVG/sun.svg" id="dark-mode-button" onclick="darkMode()" class="dark-mode" alt="light-dark-mode-button">
+            <div class="wrapper">
+                <header>
+                    <nav>
+                        <div class="logo"><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site logo"></div>
+                        <div class="menu">
+                            <ul>
+                                <li><a class="topbuttons" href="#home-container">Home</a></li>
+                                <li><a class="topbuttons" href="#about-container">About</a></li>
+                                <li><a class="topbuttons" href="#skills-container">Skills</a></li>
+                                <li><a class="topbuttons" href="#projects-container">Projects</a></li>
+                                <li><a class="topbuttons" href="#contact-container">Contact</a></li>
+                                <li><a href="#"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode" src="assets/SVG/site/sun.svg" width="" alt="dark mode button"></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
             </div>
         </section>
         <!--Home section with welcome text and social media-->
@@ -45,7 +53,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="assets/SVG/developer.svg" alt="developer-logo">
+                    <img src="assets/SVG/site/developer.svg" alt="developer-logo">
                 </div>
             </div>
         </section>
@@ -153,16 +161,16 @@
         <section>
             <div id="contact-container">
                 <div class="info">
-                    <img id="logo-bottom" src="assets/PNG/site-logo-dark.png" alt="site-logo">
-                    <h2>Contact me at:</h2>
+                    <img id="logo-bottom" src="assets/PNG/site-bottom-dark.png" alt="site-logo">
+                    <h2><b>Contact me at:</b></h2>
                 </div>
                 <div class="contact-data">
                     <div class="contact-item">
-                        <img id="phone-number" class="contact-icon" src="assets/SVG/phone.svg" alt="phone" width="32px">
+                        <img id="phone-number" class="contact-icon" src="assets/SVG/site/phone.svg" alt="phone" width="32px">
                         <h3 class="contact-text">+55 (83) 98843-1889</h3>
                     </div>
                     <div id="email-contact" class="contact-item">
-                        <img class="contact-icon" src="assets/SVG/email.svg" alt="email" width="32px">
+                        <img class="contact-icon" src="assets/SVG/site/email.svg" alt="email" width="32px">
                         <h3 class="contact-text">dantas.arthur.contact@gmail.com</h3>
                     </div>
                     <div class="contact-icon-wrapper">

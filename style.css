@@ -1,8 +1,13 @@
 /* style.css */
 
 /* Body, headers, button and other elements */
+
 html {
     scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
 }
 
 body {
@@ -61,16 +66,40 @@ hr {
 }
 
 #site-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 51%;
+    width: 65px;
+    margin-right: 45%;
+    padding-top: 5px;
 }
 
-.top-container {
-    height: 50px;
-    text-align: end;
-    margin: 2% 15% 0% 0%;
-    word-spacing: 20px;
+.logo {
+    position: fixed;
+    float: left;
+    margin-left: 10%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    ul {
+        list-style: none;
+        background: #11131c;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
 }
 
 .topbuttons {
@@ -104,12 +133,17 @@ hr {
     hr {
         border-color: #161925;
     }
+    nav {
+        ul {
+            background-color: #e1e1e1;
+        }
+    }
     #copy-email {
         color: #161925;
     }
     #dark-mode-button {
         background: none;
-        filter: brightness(0%) contrast(50%);
+        filter: invert() contrast(50%);
     }
     .card-text {
         color: rgb(200, 200, 200);
@@ -131,17 +165,17 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
-    margin: 4% 0% 6% 0%;
+    margin: 4% 0% 11% 0%;
 }
 
 .text-container {
-    margin: 5% 0% 0% 20%;
+    margin: 17% 0% 0% 20%;
 }
 
 .image-container {
     max-width: 70%;
     max-height: auto;
-    margin-left: 5%;
+    margin: 10% 0% 0% 15%;
 }
 
 #email {
