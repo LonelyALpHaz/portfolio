@@ -591,7 +591,7 @@ mark.black {
         margin-bottom: 5%;
     }
     #email {
-        margin-left: 15%;
+        margin-left: 14%;
     }
     #copy-email {
         display: none;
@@ -602,6 +602,7 @@ mark.black {
     #about-container {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 5% 0% 5%;
         width: 180%;
     }
     .about-text-container {
@@ -638,6 +639,9 @@ mark.black {
         h1 {
             margin-right: 10%;
         }
+        hr {
+            margin-left: 10%;
+        }
     }
     .skills-icons {
         margin: 5% 5% 5% 10%;
@@ -655,6 +659,7 @@ mark.black {
 
     #projects-container {
         width: 180%;
+        margin: 5% 0% 5%;
         h1 {
             margin-right: 12%;
         }
