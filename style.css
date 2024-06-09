@@ -581,6 +581,7 @@ mark.black {
     }
     .text-container {
         margin-left: 8%;
+        max-width: 100%;
     }
     .image-container {
         display: none;
@@ -594,7 +595,7 @@ mark.black {
         margin: 0 2%;
     }
     #email {
-        margin-left: 20%;
+        margin-left: 15%;
     }
     #copy-email {
         display: none;
