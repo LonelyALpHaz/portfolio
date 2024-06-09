@@ -695,7 +695,7 @@ mark.black {
         display: grid;
         grid-template-columns: 1fr;
         gap: 0px;
-        margin: 2% 0% 2% 70%;
+        margin: 2% 0% 2% 75%;
         text-align: center;
     }
     #phone-number {
