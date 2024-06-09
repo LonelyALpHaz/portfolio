@@ -640,7 +640,8 @@ mark.black {
             margin-right: 10%;
         }
         hr {
-            margin-left: 10%;
+            width: 80%;
+            margin-left: 12%;
         }
     }
     .skills-icons {
