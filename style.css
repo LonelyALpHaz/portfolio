@@ -266,13 +266,12 @@ hr {
 }
 
 .social-media-container {
-    margin: 5% 0% 0% 25%;
+    margin: 5% 0% 0% 20%;
     z-index: 999;
 }
 
 .social-media {
-    filter: invert(60%) sepia(90%) saturate(6050%) hue-rotate(165deg) brightness(100%) contrast(100%);
-    margin: 0% 0% 0% 2%;
+    filter: invert(60%) sepia(50%) saturate(6100%) hue-rotate(165deg) brightness(100%) contrast(100%);
 }
 
 /* About container and it's elements*/
@@ -588,11 +587,8 @@ mark.black {
     }
     .social-media-container {
         text-align: center;
-        margin-right: 30%;
+        margin-right: 25%;
         margin-bottom: 5%;
-    }
-    .social-media {
-        margin: 0 2%;
     }
     #email {
         margin-left: 15%;
