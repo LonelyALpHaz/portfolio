@@ -16,12 +16,17 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    --color1: #11131c;
+    --color2: #161925;
+    --color3: #06BEE1;
+    --color4: #e1e1e1;
+    --color5: #F8F1FF;
 }
 
 footer {
     padding: 1em 0;
     padding-left: 34%;
-    background-color:#11131c;
+    background-color: var(--color1);
 }
 
 #footer-copy {
@@ -62,45 +67,66 @@ hr {
 .gotop {
     width: 64px;
     height: 64px;
-    filter: drop-shadow(1px 1px 20px #11131c);
+    filter: drop-shadow(1px 1px 20px --color1)
 }
 
-#site-logo {
+.logo img {
     width: 65px;
-    margin-right: 45%;
-    padding-top: 5px;
+    transition: 0.15s ease-in-out;
+    margin-left: 200%;
 }
 
-.logo {
-    position: fixed;
-    float: left;
-    margin-left: 10%;
-}
-
-nav {
-    position: fixed;
+.nav-bar {
     width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
     top: 0;
-    ul {
-        list-style: none;
-        background: #11131c;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
+    z-index: 100;
+    background-color: var(--color1);
+    padding: 12px 20px;
+}
+
+.menu-options {
+    display: flex;
+    margin-right: 8%;
     li {
-        display: inline-block;
-        padding: 20px;
+        padding-left: 30px;
     }
-    a {
+    li, a {
+        display: inline-block;
         text-decoration: none;
+        text-align: center;
         color: white;
-        font-size: 20px;
+        position: relative;
+        transition: 0.15s ease-in-out;
         letter-spacing: 2px;
     }
 }
+
+.open-menu, .close-menu {
+    display: none;
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
 
 .topbuttons {
     color: white;
@@ -122,34 +148,49 @@ nav {
 }
 
 .dark-mode {
-    background-color: #F8F1FF;
-    color: #161925;
+    background-color: var(--color5);
+    color: var(--color2);
     .topbuttons {
-        color: #161925;
+        color: var(--color2);
     }
     p {
-        color: #161925;
+        color: var(--color2);
     }
     hr {
-        border-color: #161925;
+        border-color: var(--color2);
     }
     nav {
         ul {
-            background-color: #e1e1e1;
+            background-color: var(--color4);
         }
     }
+    footer {
+        background-color: var(--color4);
+    }
+    #footer-copy {
+        color: var(--color2);
+    }
     #copy-email {
-        color: #161925;
+        color: var(--color2);
     }
     #dark-mode-button {
         background: none;
         filter: invert() contrast(50%);
     }
+    #menubtn {
+        filter: invert();
+    }
+    .menu-options {
+        background-color: var(--color4);
+    }
+    .open-menu, .close-menu {
+        filter: invert();
+    }
     .card-text {
         color: rgb(200, 200, 200);
     }
     .contact-text{
-        color: #161925;
+        color: var(--color2);
     }
     .contact-icon {
         filter: invert();
@@ -165,17 +206,17 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
-    margin: 4% 0% 11% 0%;
+    margin: 6% 0% 7% 0%;
 }
 
 .text-container {
-    margin: 17% 0% 0% 20%;
+    margin: 10% 0% 0% 20%;
 }
 
 .image-container {
     max-width: 70%;
     max-height: auto;
-    margin: 10% 0% 0% 15%;
+    margin: 5% 0% 0% 15%;
 }
 
 #email {
@@ -184,14 +225,14 @@ nav {
     font-size: 20px;
     text-align: center;
     text-indent: 10px;
-    border: #06BEE1 solid;
+    border: var(--color3) solid;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 5%;
 }
 
 #email:hover {
-    background-color: #06BEE1;
+    background-color: var(--color3);
     mark {
         color: white;
         font-weight: normal;
@@ -226,6 +267,7 @@ nav {
 
 .social-media-container {
     margin: 5% 0% 0% 25%;
+    z-index: 999;
 }
 
 .social-media {
@@ -293,6 +335,7 @@ nav {
     width: 128px;
     height: 128px;
     margin: 2% 0% 0% 2%;
+    z-index: 999;
 }
 
 .tooltip {
@@ -304,7 +347,7 @@ nav {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #161925;
+    background-color: var(--color2);
     color: white;
     text-align: center;
     padding: 5px 0;
@@ -367,7 +410,7 @@ nav {
 }
 
 .card-data {
-    background-color: #161925;
+    background-color: var(--color2);
     color: white;
     padding: 20px;
     display: flex;
@@ -381,7 +424,7 @@ nav {
 }
 
 .card-repo {
-    color: #06BEE1;
+    color: var(--color3);
     text-decoration: none;
     font-size: 25px;
     margin-left: 70%;
@@ -441,7 +484,7 @@ nav {
 /* Marks definition colors */
 
 mark.cyan {
-    color: #06BEE1;
+    color: var(--color3);
     background: none;
     font-weight: bold;
 }
@@ -454,7 +497,10 @@ mark.black {
 
 /* Media queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
+
+    /* Body, headers, button and other elements */
+
     body {
         margin: 0;
         padding: 0;
@@ -463,6 +509,9 @@ mark.black {
         width: 180%;
         padding-left: 0%;
         text-align: center;
+        p {
+            font-size: 20px;
+        }
     }
     h1 {
         font-size: 2rem;
@@ -477,17 +526,51 @@ mark.black {
         max-width: 100%;
         padding: 0 10px;
     }
-    #topbtn, .gotop {
-        display: none;
+
+    /* Side menu */
+    #site-logo {
+        margin: 0;
     }
-    .top-container {
+    .menu-options {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color1);
+        transition: all 0.2s ease-in-out;
+        li {
+            margin-top: 40px;
+        }
+        li, a {
+            font-size: 30px;
+            padding: 10px;
+        }
+    }
+    .open-menu, .close-menu {
+        display: block;
+        }
+    .open-menu {
+        margin-right: 10%;
+    }
+    .close-menu {
+        margin: 2% 7%;
+    }
+    #check:checked ~ .menu-options {right: 0;}
+
+    /* Home container and it's elements*/
+
+    .gotop {
         display: none;
-        margin: 5% 0% 20% 0%;
-        word-spacing: 0px;
     }
     #home-container {
         display: block;
-        margin: 5% 5% 0% 5%;
+        margin: 30% 5% 0% 5%;
         width: 160%;
         text-align: center;
         p {
@@ -504,7 +587,7 @@ mark.black {
     }
     .social-media-container {
         text-align: center;
-        margin-right: 30%;
+        margin-right: 35%;
         margin-bottom: 5%;
     }
     .social-media {
@@ -516,6 +599,9 @@ mark.black {
     #copy-email {
         display: none;
     }
+
+    /* About Contaiiner and it's elements */
+
     #about-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -534,20 +620,23 @@ mark.black {
     }
     .about-image {
         width: 30%;
-        margin: 5% 0% 0% 25%;
-    }
-    #profile-picture {
-        width: 150%;
-        height: auto;
-        border-radius: 50%;
-        border: 5px #161925 solid;
+        margin: 5% 0% 0% 20%;
     }
     .about-text {
         font-size: 1.2rem;
         margin: 0% 0% 5% 9%;
-        max-width: 500px;
+        max-width: 550px;
         text-align: center;
     }
+    #profile-picture {
+        width: 180%;
+        height: auto;
+        border-radius: 50%;
+        border: 5px #161925 solid;
+    }
+    
+    /* Skills container and it's elements */
+
     #skills-container {
         width: 170%;
         margin: 5% 0% 5%;
@@ -557,7 +646,7 @@ mark.black {
         }
     }
     .skills-icons {
-        margin: 5% 5% 5% 10%;
+        margin: 5% 5% 5% 5%;
     }
     .skills {
         width: 70px;
@@ -567,6 +656,9 @@ mark.black {
     .tooltip .tooltiptext {
         font-size: 0.75rem;
     }
+
+    /* Projects container and it's elements */
+
     #projects-container {
         width: 180%;
         h1 {
@@ -598,6 +690,9 @@ mark.black {
         text-align: right;
         margin-right: 5%;
     }
+
+    /* Contact container and it's elements */
+
     #contact-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -605,14 +700,17 @@ mark.black {
         margin: 2% 0% 2% 70%;
         text-align: center;
     }
-    .info {
-        display: none;
-    }
     #phone-number {
         margin-left: 15%;
     }
     #email-contact {
         padding-right: 30px;
+    }
+    .info {
+        img {
+            margin: 0;
+            width: 150px;
+        }
     }
     .contact-item {
         display: flex;
@@ -632,9 +730,5 @@ mark.black {
         margin-left: 2%;
         text-decoration: none;
         color: white;
-    }
-    #logo-bottom {
-        width: 100px;
-        height: 100px;
     }
 }

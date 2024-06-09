@@ -17,23 +17,24 @@
     <main>
         <!--Top navigator bar-->
         <section>
-            <div class="wrapper">
-                <header>
-                    <nav>
+            <header>
+                <nav>
+                    <ul class="nav-bar">
                         <div class="logo"><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site logo"></div>
-                        <div class="menu">
-                            <ul>
-                                <li><a class="topbuttons" href="#home-container">Home</a></li>
-                                <li><a class="topbuttons" href="#about-container">About</a></li>
-                                <li><a class="topbuttons" href="#skills-container">Skills</a></li>
-                                <li><a class="topbuttons" href="#projects-container">Projects</a></li>
-                                <li><a class="topbuttons" href="#contact-container">Contact</a></li>
-                                <li><a href="#"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode" src="assets/SVG/site/sun.svg" width="" alt="dark mode button"></a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
-            </div>
+                        <input type="checkbox" id="check">
+                        <span class="menu-options">
+                            <li><a class="topbuttons" href="#home-container">Home</a></li>
+                            <li><a class="topbuttons" href="#about-container">About</a></li>
+                            <li><a class="topbuttons" href="#skills-container">Skills</a></li>
+                            <li><a class="topbuttons" href="#projects-container">Projects</a></li>
+                            <li><a class="topbuttons" href="#contact-container">Contact</a></li>
+                            <li><a href="#"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode" src="assets/SVG/site/sun.svg" alt="dark mode button"></a></li>
+                            <label for="check" class="close-menu"><img src="assets/SVG/site/close.svg" alt="close button" width="32px"></label>
+                        </span>
+                        <label for="check" class="open-menu"><img src="assets/SVG/site/menu.svg" alt="menu button" width="32px"></label>
+                    </ul>
+                </nav>
+            </header>
         </section>
         <!--Home section with welcome text and social media-->
         <section>
