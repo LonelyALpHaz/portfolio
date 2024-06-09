@@ -224,7 +224,7 @@ hr {
     height: 30px;
     font-size: 20px;
     text-align: center;
-    text-indent: 10px;
+    text-indent: 12px;
     border: var(--color3) solid;
     border-radius: 10px;
     cursor: pointer;
