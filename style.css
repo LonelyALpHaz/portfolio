@@ -570,7 +570,7 @@ mark.black {
     }
     #home-container {
         display: block;
-        margin: 35% 5% 5% 0%;
+        margin: 35% 5% 5% 5%;
         width: 160%;
         text-align: center;
         p {
@@ -591,10 +591,10 @@ mark.black {
         margin-bottom: 5%;
     }
     .social-media {
-        margin: 0 5px;
+        margin: 0 2%;
     }
     #email {
-        margin-left: 15%;
+        margin-left: 20%;
     }
     #copy-email {
         display: none;
@@ -611,9 +611,6 @@ mark.black {
         h1 {
             margin-right: 5%;
         }
-        p {
-            font-size: 20px;
-        }
         hr {
             margin-left: 6%;
         }
@@ -624,14 +621,14 @@ mark.black {
     }
     .about-text {
         font-size: 1.2rem;
-        margin: 0% 0% 5% 5%;
-        max-width: 550px;
+        margin: 0% 0% 5% 7%;
+        max-width: 80%;
         text-align: center;
     }
     #profile-picture {
         width: 180%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 360%;
         border: 5px #161925 solid;
     }
     
@@ -650,7 +647,7 @@ mark.black {
     }
     .skills {
         width: 70px;
-        height: 70px;
+        height: auto;
         margin: 2% 5%;
     }
     .tooltip .tooltiptext {
