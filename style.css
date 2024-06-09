@@ -528,7 +528,7 @@ mark.black {
 
     /* Side menu */
     #site-logo {
-        margin: 0;
+        margin-left: 10%;
     }
     .menu-options {
         flex-direction: column;
