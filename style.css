@@ -24,12 +24,14 @@ body {
 }
 
 footer {
+    width: 100%;
     padding: 1em 0;
-    padding-left: 34%;
     background-color: var(--color1);
+    display: flex;
+    justify-content: center;
 }
 
-#footer-copy {
+.footer-copy {
     color: white;
 }
 
@@ -62,6 +64,12 @@ hr {
     width: 100%;
 }
 
+/* Second language hide*/
+
+.english {
+    display: none;
+}
+
 /* Top menu navigator bar, go to top button and dark mode*/
 
 .gotop {
@@ -88,6 +96,34 @@ hr {
     z-index: 100;
     background-color: var(--color1);
     padding: 12px 20px;
+}
+
+.lang, #arrowDown {
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 5px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.lang-option {
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 5px 0;
+}
+
+.lang-option:hover {
+    text-decoration: underline #06BEE1;
+    color: #06BEE1;
 }
 
 .menu-options {
@@ -145,7 +181,7 @@ hr {
     height: auto;
     cursor: pointer;
     background: none;
-    transition: 0.5s ease-in-out;
+    transition: 0.15s ease-in-out;
 }
 
 .dm-container {
@@ -184,6 +220,9 @@ hr {
     }
     #menubtn {
         filter: invert();
+    }
+    .lang {
+        filter: invert() contrast(50%);
     }
     .menu-options {
         background-color: var(--color4);
@@ -532,6 +571,7 @@ mark.black {
     }
 
     /* Side menu */
+
     #site-logo {
         margin-left: 10%;
     }
@@ -558,6 +598,9 @@ mark.black {
     }
     .dm-container {
         margin-right: 20%;
+    }
+    .lang-container {
+        margin-left: 55%;
     }
     .open-menu, .close-menu {
         display: block;

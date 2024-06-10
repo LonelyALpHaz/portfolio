@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes">
@@ -23,14 +23,32 @@
                         <div class="logo"><img id="site-logo" src="assets/PNG/site-logo-dark.png" alt="site logo"></div>
                         <input type="checkbox" id="check">
                         <span class="menu-options">
-                            <li><a class="topbuttons" href="#home-container">Home</a></li>
-                            <li><a class="topbuttons" href="#about-container">About</a></li>
-                            <li><a class="topbuttons" href="#skills-container">Skills</a></li>
-                            <li><a class="topbuttons" href="#projects-container">Projects</a></li>
-                            <li><a class="topbuttons" href="#contact-container">Contact</a></li>
+                            <!-- Portuguese Buttons -->
+                             <div class="portuguese">
+                                <li><a class="topbuttons" href="#home-container">Home</a></li>
+                                <li><a class="topbuttons" href="#about-container">Sobre</a></li>
+                                <li><a class="topbuttons" href="#skills-container">Skills</a></li>
+                                <li><a class="topbuttons" href="#projects-container">Projetos</a></li>
+                                <li><a class="topbuttons" href="#contact-container">Contato</a></li>
+                             </div>
+                            <!-- English Buttons -->
+                             <div class="english">
+                                <li><a class="topbuttons" href="#home-container">Home</a></li>
+                                <li><a class="topbuttons" href="#about-container">About</a></li>
+                                <li><a class="topbuttons" href="#skills-container">Skills</a></li>
+                                <li><a class="topbuttons" href="#projects-container">Projects</a></li>
+                                <li><a class="topbuttons" href="#contact-container">Contact</a></li> 
+                             </div>
                             <label for="check" class="close-menu"><img src="assets/SVG/site/close.svg" alt="close button" width="32px"></label>
                         </span>
                         <label for="check" class="open-menu"><img src="assets/SVG/site/menu.svg" alt="menu button" width="32px"></label>
+                        <label class="lang-container" onclick="toggleLanguageMenu()">
+                            <img class="lang" src="assets/SVG/site/language.svg" alt="select language" width="32px"><span id="arrowDown">˅</span>
+                            <div class="lang-menu" id="langMenu">
+                                <span class="lang-option" onclick="changeLanguage('english')">English</span>
+                                <span class="lang-option" onclick="changeLanguage('portuguese')">Português</span>
+                            </div>
+                        </label>
                         <label class="dm-container"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode" src="assets/SVG/site/sun.svg" alt="dark mode button"</label>
                     </ul>
                 </nav>
@@ -40,9 +58,14 @@
         <section>
             <div id="home-container">
                 <div class="text-container">
-                    <h1>Hello, I'm <mark class="cyan">Arthur</mark></h1>
-                    <h1>a Back-End developer.</h1>
-                    <p>I'm a Brazilian programming lover, I like to create simple, common and eye-pleasing interfaces.</p>
+                    <!-- Portuguese welcome message -->
+                    <h1 class="portuguese">Olá, eu sou <mark class="cyan">Arthur</mark></h1>
+                    <h1 class="portuguese">um programador Back-End.</h1>
+                    <p class="portuguese">Eu sou um brasileiro amante da programação, gosto de criar interfaces simples e agradáveis aos olhos.</p>
+                    <!-- English welcome message -->
+                    <h1 class="english">Hello, I'm <mark class="cyan">Arthur</mark></h1>
+                    <h1 class="english">a Back-End developer.</h1>
+                    <p class="english">I'm a Brazilian programming lover, I like to create simple and eye-pleasing interfaces.</p>
                     <div style="display: table;">
                         <div id="email"><mark class="cyan" style="display: table-cell;">dantas.arthur.contact@gmail.com</mark></div>
                         <div id="copy-email">⭠ Click to copy.</div>
@@ -65,20 +88,27 @@
                     <img id="profile-picture" src="assets/JPG/photo.jpg" alt="Arthur's profile picture">
                 </div>
                 <div class="about-text-container">
-                    <h1>About me</h1>
+                    <h1 class="portuguese">Sobre mim</h1>
+                    <h1 class="english">About me</h1>
                     <hr>
-                    <p class="about-text">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="black">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> and <mark class="black">Javascript</mark>.</p>
-                    <p class="about-text">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
+                    <!-- Portuguese text -->
+                    <p class="about-text portuguese">Opa! Meu nome é <b><mark class="black">Arthur Dantas</mark></b>, e eu sou um programador brasileiro de 19 anos. Tenho uma paixão por desenvolver ferramentas de automação de tarefas em larga escala usando <mark class="black">Python</mark>, bem como criar interfaces simples e bonitas com <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> e <mark class="black">Javascript</mark>.</p>
+                    <p class="about-text portuguese">Estou sempre me esforçando para evoluir meus projetos e entregar os melhores resultados possíveis. Meus próximos objetivos são aprofundar meu conhecimento em desenvolvimento web e começar a estudar uma nova linguagem de programação.</p>
+                    <!-- English text -->
+                    <p class="about-text english">Hi! My name is <b><mark class="black">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="black">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="black">HTML5</mark>, <mark class="black">CSS3</mark> and <mark class="black">Javascript</mark>.</p>
+                    <p class="about-text english">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
                 </div>
             </div>
         </section>
         <!--Skills container with languages, frameworks and tools-->
         <section>
             <div id="skills-container">
-                <h1>My skills</h1>
+                <h1 class="portuguese">Minhas Skills</h1>
+                <h1 class="english">My skills</h1>
                 <hr>
                 <div class="skills-icons">
-                    <h2 style="padding-bottom: 2%;">Languages and Frameworks</h2>
+                    <h2 class="english" style="padding-bottom: 2%;">Languages and Frameworks</h2>
+                    <h2 class="portuguese">Linguagens e Frameworks</h2>
                     <div class="tooltip">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skills" alt="Python">
                         <span class="tooltiptext">Python</span>
@@ -101,7 +131,8 @@
                     </div>
                 </div>            
                 <div class="skills-icons">
-                    <h2 style="padding-bottom: 2%;">Programs and Tools</h2>
+                    <h2 class="english" style="padding-bottom: 2%;">Programs and Tools</h2>
+                    <h2 class="portuguese">Programas e Ferramentas</h2>
                     <div class="tooltip">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skills" alt="VSCode">
                         <span class="tooltiptext">Visual Studio Code</span>
@@ -132,7 +163,8 @@
         <!--Projects section with some of my projects-->
         <section>
             <div id="projects-container">
-                <h1>My projects</h1>
+                <h1 class="portuguese">Meus Projetos</h1>
+                <h1 class="english">My projects</h1>
                 <hr>
                 <div class="projects">
                     <div class="card">
@@ -140,9 +172,13 @@
                             <img class="card-image" src="assets/projects/weather.png" width="300px" alt="weather-app">
                         </div>
                         <div class="card-data">
-                            <h2>Weather App</h2>
-                            <p class="card-text">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
-                            <a class="card-repo" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
+                            <h2>Weather App</h2>    
+                            <!-- Portuguese Text -->
+                            <p class="card-text portuguese">Aplicação desenvolvida em <mark class="cyan">Python</mark> utilizando o framework <mark class="cyan">Flet</mark> e a API do <mark class="cyan">OpenWeatherMap</mark> que exibe data, hora e clima de uma localização específica.</p>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ Ver mais</a>
+                            <!-- English text-->
+                            <p class="card-text english">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
                         </div>
                     </div>
                     <div class="card">
@@ -151,8 +187,12 @@
                         </div>
                         <div class="card-data">
                             <h2>3DS QR Codes</h2>
-                            <p class="card-text">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
-                            <a class="card-repo" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
+                            <!-- Portuguese text -->
+                            <p class="card-text portuguese">Programa feito em <mark class="cyan">Python</mark> utilizando o módulo <mark class="cyan">CustomTkinter</mark> que gera códigos QR a partir de arquivos do Google Drive ou Internet Archive para facilitar a instalação de jogos no Nintendo 3DS.</p>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ Ver mais</a>
+                            <!-- English text -->
+                            <p class="card-text english">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +203,8 @@
             <div id="contact-container">
                 <div class="info">
                     <img id="logo-bottom" src="assets/PNG/site-bottom-dark.png" alt="site-logo">
-                    <h2><b>Contact me at:</b></h2>
+                    <h2 class="english"><b>Contact me at:</b></h2>
+                    <h2 class="portuguese"><b>Mande um "Alô":</b></h2>
                 </div>
                 <div class="contact-data">
                     <div class="contact-item">
@@ -190,7 +231,8 @@
     </main>
     <!--Footer with copyright-->
     <footer>
-        <p id="footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
+        <p class="english footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
+        <p class="portuguese footer-copy" >&copy; 2024 Arthur Dantas. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
 </body>

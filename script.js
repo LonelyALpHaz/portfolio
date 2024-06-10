@@ -16,6 +16,43 @@ function darkMode() {
     };
 }
 
+// Toggle options to select language
+
+function toggleLanguageMenu() {
+    var langMenu = document.getElementById("langMenu");
+    var arrowDown = document.getElementById("arrowDown");
+    if (langMenu.style.display === "none") {
+        langMenu.style.display = " block";
+        arrowDown.innerText = "˄"
+    } else {
+        langMenu.style.display = "none";
+        arrowDown.innerText = "˅"
+    }
+}
+
+// Select site language function
+
+function changeLanguage(language) {
+    var englishElements = document.querySelectorAll('.english');
+    var portugueseElements = document.querySelectorAll('.portuguese');
+
+    if (language === 'english') {
+        englishElements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+        portugueseElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+    } else if (language === 'portuguese') {
+        englishElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+        portugueseElements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+    }
+}
+
 // Click and Copy email function
 
 var span = document.getElementById("email");
