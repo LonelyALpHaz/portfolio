@@ -67,7 +67,7 @@ hr {
 .gotop {
     width: 64px;
     height: 64px;
-    filter: drop-shadow(1px 1px 20px --color1)
+    filter: drop-shadow(1px 1px 20px var(--color1))
 }
 
 .logo img {
@@ -92,7 +92,7 @@ hr {
 
 .menu-options {
     display: flex;
-    margin-right: 8%;
+    margin-left: 50%;
     li {
         padding-left: 30px;
     }
@@ -145,6 +145,10 @@ hr {
     height: auto;
     cursor: pointer;
     background: none;
+}
+
+.dm-container {
+    margin-right: 5%;
 }
 
 .dark-mode {
@@ -550,6 +554,9 @@ mark.black {
             font-size: 30px;
             padding: 10px;
         }
+    }
+    .dm-container {
+        margin-right: 20%;
     }
     .open-menu, .close-menu {
         display: block;
