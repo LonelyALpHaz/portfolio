@@ -659,9 +659,8 @@ mark.black {
         width: 160%;
         text-align: center;
         p {
-            max-width: 80%;
-            margin-left: 7%;
-            font-size: 20px;
+            max-width: 100%;
+            font-size: 1.2rem;
         }
     }
     .text-container {
@@ -677,7 +676,7 @@ mark.black {
         margin-bottom: 5%;
     }
     #email {
-        margin-left: 14%;
+        margin-left: 15%;
     }
     #copy-email {
         display: none;
