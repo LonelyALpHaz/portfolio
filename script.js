@@ -29,11 +29,17 @@ function toggleLanguageMenu() {
 
 // Select site language function
 
+var copied = document.getElementById("copy-email");
+var copySuccessMessageEnglish = "✓ Copied!";
+var copySuccessMessagePortuguese = "✓ Copiado!";
+var currentLanguage = 'portuguese';
+
 function changeLanguage(language) {
     var englishElements = document.querySelectorAll('.english');
     var portugueseElements = document.querySelectorAll('.portuguese');
 
     if (language === 'english') {
+        copied.innerHTML = "⭠ Click to copy."
         englishElements.forEach(function(element) {
             element.style.display = 'block';
         });
@@ -41,6 +47,7 @@ function changeLanguage(language) {
             element.style.display = 'none';
         });
     } else if (language === 'portuguese') {
+        copied.innerHTML = "⭠ Clique para copiar."
         englishElements.forEach(function(element) {
             element.style.display = 'none';
         });
@@ -48,24 +55,34 @@ function changeLanguage(language) {
             element.style.display = 'block';
         });
     }
+
+    currentLanguage = language; // Update current language
 }
 
-// Click and Copy email function
+// Click and copy function
 
 var span = document.getElementById("email");
 
 span.onclick = function() {
     document.execCommand("copy");
-    var copied = document.getElementById("copy-email");
     // remove fade-out (if exists)
     copied.classList.remove("fade-out", "hide");
     // Add fade-in class
     copied.classList.add("fade-in", "show");
-    copied.innerHTML = "✓ Copied!";
+
+    if (currentLanguage === 'english') {
+        copied.innerHTML = copySuccessMessageEnglish;
+    } else if (currentLanguage === 'portuguese') {
+        copied.innerHTML = copySuccessMessagePortuguese;
+    }
     setTimeout(function() {
         copied.classList.remove("fade-in", "show");
         copied.classList.add("fade-out");
-        copied.innerHTML = "⭠ Click to copy.";
+        if (currentLanguage === 'english') {
+            copied.innerHTML = "⭠ Click to copy.";
+        } else if (currentLanguage === 'portuguese') {
+            copied.innerHTML = "⭠ Clique para copiar.";
+        }
     }, 2000);
 }
 
