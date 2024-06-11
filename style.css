@@ -98,7 +98,8 @@ hr {
     padding: 12px 20px;
 }
 
-.lang, #arrowDown {
+.lang {
+    width: 32px;
     cursor: pointer;
     transition: 0.15s ease-in-out;
 }
@@ -141,6 +142,10 @@ hr {
         transition: 0.15s ease-in-out;
         letter-spacing: 2px;
     }
+}
+
+.menu-btn {
+    width: 32px;
 }
 
 .open-menu, .close-menu {
@@ -584,10 +589,14 @@ mark.black {
     #site-logo {
         margin-left: 10%;
     }
+    .nav-bar {
+        height: 5%;
+    }
     .menu-options {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: center;
+        text-align: center;
         margin: 0;
         width: 70%;
         height: 100%;
@@ -596,20 +605,37 @@ mark.black {
         right: -100%;
         z-index: 100;
         background-color: var(--color1);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.15s ease-in-out;
         li {
-            margin-top: 40px;
-        }
+            margin: 15% 0% 10% 45%;
+       }
         li, a {
-            font-size: 30px;
+            font-size: 35px;
             padding: 10px;
+            text-align: center;
         }
     }
     .dm-container {
         margin-right: 20%;
     }
+    #dark-mode-button {
+        width: 45px;
+    }
+    .lang {
+        width: 45px;
+    }
     .lang-container {
         margin-left: 55%;
+    }
+    .lang-menu {
+        width: 20%;
+        height: 90%;
+        span {
+            font-size: 25px;
+        }
+    }
+    .menu-btn {
+        width: 45px;
     }
     .open-menu, .close-menu {
         display: block;
