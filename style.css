@@ -607,7 +607,7 @@ mark.black {
         background-color: var(--color1);
         transition: all 0.15s ease-in-out;
         li {
-            margin: 15% 0% 10% 45%;
+            margin: 15% 0% 10% 4%;
        }
         li, a {
             font-size: 35px;
@@ -616,7 +616,7 @@ mark.black {
         }
     }
     .dm-container {
-        margin-right: 20%;
+        margin: 0% 22% 0% 3%;
     }
     #dark-mode-button {
         width: 45px;
