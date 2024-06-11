@@ -20,13 +20,10 @@ function darkMode() {
 
 function toggleLanguageMenu() {
     var langMenu = document.getElementById("langMenu");
-    var arrowDown = document.getElementById("arrowDown");
     if (langMenu.style.display === "none") {
         langMenu.style.display = " block";
-        arrowDown.innerText = "˄"
     } else {
         langMenu.style.display = "none";
-        arrowDown.innerText = "˅"
     }
 }
 

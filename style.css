@@ -75,7 +75,7 @@ hr {
 .gotop {
     width: 64px;
     height: 64px;
-    filter: drop-shadow(1px 1px 20px var(--color1))
+    filter: drop-shadow(1px 1px 20px var(--color1));
 }
 
 .logo img {
@@ -223,6 +223,15 @@ hr {
     }
     .lang {
         filter: invert() contrast(50%);
+    }
+    .lang-menu {
+        background-color: var(--color4);
+        span {
+            color: var(--color2);
+        }
+    }
+    .lang-option:hover {
+        text-decoration: underline var(--color1);
     }
     .menu-options {
         background-color: var(--color4);
