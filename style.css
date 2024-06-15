@@ -11,16 +11,17 @@ header {
 }
 
 body {
-    background-color: #161925;
-    font-family: "Roboto Mono", monospace;
-    color: white;
-    margin: 0;
-    padding: 0;
     --color1: #11131c;
     --color2: #161925;
     --color3: #06BEE1;
     --color4: #e1e1e1;
     --color5: #F8F1FF;
+    background-color: var(--color2);
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
 }
 
 footer {
@@ -64,13 +65,13 @@ hr {
     width: 100%;
 }
 
-/* Second language hide*/
+/* Second language hide */
 
 .english {
     display: none;
 }
 
-/* Top menu navigator bar, go to top button and dark mode*/
+/* Top menu navigator bar, go to top button and dark mode */
 
 .gotop {
     width: 64px;
@@ -258,7 +259,7 @@ hr {
     }
 }
 
-/* Home container and it's elements*/
+/* Home container and it's elements */
 
 #home-container {
     display: grid;
@@ -332,7 +333,7 @@ hr {
     filter: invert(60%) sepia(50%) saturate(6100%) hue-rotate(165deg) brightness(100%) contrast(100%);
 }
 
-/* About container and it's elements*/
+/* About container and it's elements */
 
 #about-container {
     background-color: #0598b4;
@@ -371,7 +372,7 @@ hr {
     margin: 5% 20% 0% 0%;
 }
 
-/* Skills container and it's elements*/
+/* Skills container and it's elements */
 
 #skills-container {
     margin: 5% 0% 5%;
@@ -423,7 +424,7 @@ hr {
     opacity: 1;
 }
 
-/* Projects container and it's elements*/
+/* Projects container and it's elements */
 
 #projects-container {
     background-color: #0598b4;
@@ -498,7 +499,7 @@ hr {
     border-bottom-left-radius: 20px;
 }
 
-/* Contact container and it's elements*/
+/* Contact container and it's elements */
 
 #contact-container {
     display: flex;
@@ -590,7 +591,7 @@ mark.black {
         margin-left: 10%;
     }
     .nav-bar {
-        height: 5%;
+        height: 6%;
     }
     .menu-options {
         display: grid;
@@ -616,7 +617,7 @@ mark.black {
         }
     }
     .dm-container {
-        margin: 0% 19% 0% 0%;
+        margin: 0% 21% 0% 0%;
     }
     #dark-mode-button {
         width: 45px;
@@ -625,7 +626,7 @@ mark.black {
         width: 45px;
     }
     .lang-container {
-        margin-left: 55%;
+        margin-left: 50%;
     }
     .lang-menu {
         width: 20%;
@@ -648,14 +649,14 @@ mark.black {
     }
     #check:checked ~ .menu-options {right: 0;}
 
-    /* Home container and it's elements*/
+    /* Home container and it's elements */
 
     .gotop {
         display: none;
     }
     #home-container {
         display: block;
-        margin: 35% 5% 5% 5%;
+        margin: 45% 5% 5% 5%;
         width: 160%;
         text-align: center;
         p {
