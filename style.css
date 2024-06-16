@@ -2,6 +2,11 @@
 
 /* Body, headers, button and other elements */
 
+::selection {
+    background-color: var(--color3);
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
