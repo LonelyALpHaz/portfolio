@@ -250,8 +250,20 @@ hr {
     .open-menu, .close-menu {
         filter: invert();
     }
+    .card-data {
+        background-color: var(--color5);
+        h2 {
+            color: var(--color2);
+        }
+        p {
+            color: var(--color2);
+        }
+    }
     .card-text {
         color: rgb(200, 200, 200);
+    }
+    .card-project {
+        background-color: var(--color4);
     }
     .contact-text{
         color: var(--color2);
@@ -483,7 +495,7 @@ hr {
 }
 
 .card-text {
-    max-width: 6000px;
+    max-width: 600px;
 }
 
 .card-repo {
