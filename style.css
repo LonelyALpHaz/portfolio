@@ -229,6 +229,11 @@ hr {
         background: none;
         filter: invert() contrast(50%);
     }
+    #email:hover {
+        filter: contrast(70%);
+        background-color: var(--color2);
+        border-color: var(--color2);
+    }
     #menubtn {
         filter: invert();
     }
@@ -240,6 +245,9 @@ hr {
         span {
             color: var(--color2);
         }
+    }
+    .social-media:hover {
+        filter: invert() contrast(70%);
     }
     .lang-option:hover {
         text-decoration: underline var(--color1);
@@ -308,11 +316,8 @@ hr {
 }
 
 #email:hover {
-    background-color: var(--color3);
-    mark {
-        color: white;
-        font-weight: normal;
-    }
+    background-color: var(--color4);
+    border-color: var(--color4);
 }
 
 #copy-email {
@@ -348,6 +353,10 @@ hr {
 
 .social-media {
     filter: invert(60%) sepia(50%) saturate(6100%) hue-rotate(165deg) brightness(100%) contrast(100%);
+}
+
+.social-media:hover {
+    filter: grayscale(100%) brightness(100%);
 }
 
 /* About container and it's elements */
