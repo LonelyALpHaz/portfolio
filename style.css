@@ -23,7 +23,7 @@ body {
     --color5: #F8F1FF;
     background-color: var(--color2);
     font-family: "Roboto Mono", monospace;
-    color: white;
+    color: var(--color4);
     margin: 0;
     padding: 0;
     
@@ -597,7 +597,7 @@ mark.black {
         }
     }
     h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
         text-align: center;
     }
     h2 {
@@ -605,7 +605,7 @@ mark.black {
         text-align: center;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         max-width: 100%;
         padding: 0 10px;
     }
@@ -687,6 +687,7 @@ mark.black {
         max-width: 100%;
     }
     .image-container {
+        width: 80;
         max-width: 100%;
         margin-right: 10%;
     }
@@ -696,7 +697,7 @@ mark.black {
         margin: 5% 25% 5%
     }
     #email {
-        margin-left: 15%;
+        margin-left: 16%;
     }
     #copy-email {
         display: none;
@@ -707,7 +708,7 @@ mark.black {
     #about-container {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 5% 0% 5%;
+        padding: 10% 0% 10%;
         width: 180%;
     }
     .about-text-container {
@@ -739,7 +740,7 @@ mark.black {
 
     #skills-container {
         width: 170%;
-        margin: 5% 0% 5%;
+        padding: 10% 0% 10%;
         text-align: center;
         h1 {
             margin-right: 10%;
@@ -765,7 +766,7 @@ mark.black {
 
     #projects-container {
         width: 180%;
-        margin: 5% 0% 5%;
+        padding: 10% 0% 10%;
         h1 {
             margin-right: 12%;
         }
@@ -803,6 +804,7 @@ mark.black {
         grid-template-columns: 1fr;
         gap: 0px;
         margin: 2% 0% 2% 75%;
+        padding: 10% 0% 10%;
         text-align: center;
     }
     #phone-number {
