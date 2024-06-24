@@ -635,7 +635,7 @@ mark.black {
         transition: all 0.15s ease-in-out;
         li {
             margin: 15% 0% 10% 40%;
-       }
+        }
         li, a {
             font-size: 35px;
             padding: 10px;
@@ -666,7 +666,7 @@ mark.black {
     }
     .open-menu, .close-menu {
         display: block;
-        }
+    }
     .open-menu {
         margin-right: 10%;
     }
